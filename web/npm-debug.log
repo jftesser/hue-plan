@@ -1,0 +1,1139 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.36
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/jftesser/Documents/Projects/hue plan/web',
+5 verbose install   [ 'bower', 'browserify', 'snapsvg', 'tinycolor2', 'vec2' ] ]
+6 info preinstall web@1.0.0
+7 verbose readDependencies using package.json deps
+8 verbose cache add [ 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev',
+8 verbose cache add   null ]
+9 verbose cache add name=undefined spec="snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev" args=["snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: '#dev',
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git',
+10 verbose parsed url   path: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git',
+10 verbose parsed url   href: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev' }
+11 verbose cache add name="snapsvg" spec="git://github.com/adobe-webplatform/Snap.svg.git#dev" args=["snapsvg","git://github.com/adobe-webplatform/Snap.svg.git#dev"]
+12 verbose parsed url { protocol: 'git:',
+12 verbose parsed url   slashes: true,
+12 verbose parsed url   auth: null,
+12 verbose parsed url   host: 'github.com',
+12 verbose parsed url   port: null,
+12 verbose parsed url   hostname: 'github.com',
+12 verbose parsed url   hash: '#dev',
+12 verbose parsed url   search: null,
+12 verbose parsed url   query: null,
+12 verbose parsed url   pathname: '/adobe-webplatform/Snap.svg.git',
+12 verbose parsed url   path: '/adobe-webplatform/Snap.svg.git',
+12 verbose parsed url   href: 'git://github.com/adobe-webplatform/Snap.svg.git#dev' }
+13 verbose already installed skipping tinycolor2@^1.1.2 /Users/jftesser/Documents/Projects/hue plan/web
+14 silly lockFile f426ab0d-m-adobe-webplatform-Snap-svg-git git://github.com/adobe-webplatform/Snap.svg.git
+15 verbose lock git://github.com/adobe-webplatform/Snap.svg.git /Users/jftesser/.npm/f426ab0d-m-adobe-webplatform-Snap-svg-git.lock
+16 verbose addRemoteGit [ 'git://github.com/adobe-webplatform/Snap.svg.git', 'dev' ]
+17 verbose already installed skipping vec2@^1.6.0 /Users/jftesser/Documents/Projects/hue plan/web
+18 verbose already installed skipping bower@^1.3.12 /Users/jftesser/Documents/Projects/hue plan/web
+19 verbose already installed skipping browserify@^8.1.2 /Users/jftesser/Documents/Projects/hue plan/web
+20 verbose git remote.origin.url git://github.com/adobe-webplatform/Snap.svg.git
+21 verbose git fetch -a origin (git://github.com/adobe-webplatform/Snap.svg.git)
+22 verbose git rev-list -n1 dev d2701c4fb0eb802bcb4f5b70f20b822ee9342dcf
+23 verbose resolved git url git://github.com/adobe-webplatform/Snap.svg.git#d2701c4fb0eb802bcb4f5b70f20b822ee9342dcf
+24 verbose tar unpack /var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz
+25 silly lockFile 101b0322-41793082212097943-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz-unpack
+26 verbose lock tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz-unpack /Users/jftesser/.npm/101b0322-41793082212097943-tmp-tgz-unpack.lock
+27 silly lockFile 5f243073-9670-0-41793082212097943-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz
+28 verbose lock tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz /Users/jftesser/.npm/5f243073-9670-0-41793082212097943-tmp-tgz.lock
+29 silly gunzTarPerm modes [ '755', '644' ]
+30 silly gunzTarPerm extractEntry
+31 silly gunzTarPerm modified mode [ '', 509, 493 ]
+32 silly gunzTarPerm extractEntry .gitignore
+33 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+34 silly gunzTarPerm extractEntry .gitmodules
+35 silly gunzTarPerm modified mode [ '.gitmodules', 436, 420 ]
+36 silly gunzTarPerm extractEntry CONTRIBUTING
+37 silly gunzTarPerm modified mode [ 'CONTRIBUTING', 436, 420 ]
+38 silly gunzTarPerm extractEntry Gruntfile.js
+39 silly gunzTarPerm modified mode [ 'Gruntfile.js', 436, 420 ]
+40 silly gunzTarPerm extractEntry LICENSE
+41 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+42 silly gunzTarPerm extractEntry NOTICE
+43 silly gunzTarPerm modified mode [ 'NOTICE', 436, 420 ]
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+46 silly gunzTarPerm extractEntry bower.json
+47 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+48 silly gunzTarPerm extractEntry component.json
+49 silly gunzTarPerm modified mode [ 'component.json', 436, 420 ]
+50 silly gunzTarPerm extractEntry demos/
+51 silly gunzTarPerm modified mode [ 'demos/', 509, 493 ]
+52 silly gunzTarPerm extractEntry demos/animated-game/
+53 silly gunzTarPerm modified mode [ 'demos/animated-game/', 509, 493 ]
+54 silly gunzTarPerm extractEntry demos/animated-game/index.html
+55 silly gunzTarPerm modified mode [ 'demos/animated-game/index.html', 509, 493 ]
+56 silly gunzTarPerm extractEntry demos/animated-game/js/
+57 silly gunzTarPerm modified mode [ 'demos/animated-game/js/', 509, 493 ]
+58 silly gunzTarPerm extractEntry demos/animated-game/js/backbone.js
+59 silly gunzTarPerm modified mode [ 'demos/animated-game/js/backbone.js', 436, 420 ]
+60 silly gunzTarPerm extractEntry demos/animated-game/js/jquery-1.9.0.min.js
+61 silly gunzTarPerm modified mode [ 'demos/animated-game/js/jquery-1.9.0.min.js', 436, 420 ]
+62 silly gunzTarPerm extractEntry demos/animated-game/js/main.js
+63 silly gunzTarPerm modified mode [ 'demos/animated-game/js/main.js', 436, 420 ]
+64 silly gunzTarPerm extractEntry demos/animated-game/js/path-animal.js
+65 silly gunzTarPerm modified mode [ 'demos/animated-game/js/path-animal.js', 436, 420 ]
+66 silly gunzTarPerm extractEntry demos/animated-game/js/seedrandom.js
+67 silly gunzTarPerm modified mode [ 'demos/animated-game/js/seedrandom.js', 436, 420 ]
+68 silly gunzTarPerm extractEntry demos/animated-game/js/snap.svg.js
+69 silly gunzTarPerm modified mode [ 'demos/animated-game/js/snap.svg.js', 509, 493 ]
+70 silly gunzTarPerm extractEntry demos/animated-game/js/tree-face.js
+71 silly gunzTarPerm modified mode [ 'demos/animated-game/js/tree-face.js', 436, 420 ]
+72 silly gunzTarPerm extractEntry demos/animated-game/js/underscore.js
+73 silly gunzTarPerm modified mode [ 'demos/animated-game/js/underscore.js', 436, 420 ]
+74 silly gunzTarPerm extractEntry demos/animated-map/
+75 silly gunzTarPerm modified mode [ 'demos/animated-map/', 509, 493 ]
+76 silly gunzTarPerm extractEntry demos/animated-map/index.html
+77 silly gunzTarPerm modified mode [ 'demos/animated-map/index.html', 436, 420 ]
+78 silly gunzTarPerm extractEntry demos/animated-map/map.svg
+79 silly gunzTarPerm modified mode [ 'demos/animated-map/map.svg', 436, 420 ]
+80 silly gunzTarPerm extractEntry demos/clock/
+81 silly gunzTarPerm modified mode [ 'demos/clock/', 509, 493 ]
+82 silly gunzTarPerm extractEntry demos/clock/index.html
+83 silly gunzTarPerm modified mode [ 'demos/clock/index.html', 436, 420 ]
+84 silly gunzTarPerm extractEntry demos/illustrated-infographic-coffee/
+85 silly gunzTarPerm modified mode [ 'demos/illustrated-infographic-coffee/', 509, 493 ]
+86 silly gunzTarPerm extractEntry demos/illustrated-infographic-coffee/demo.svg
+87 silly gunzTarPerm modified mode [ 'demos/illustrated-infographic-coffee/demo.svg', 436, 420 ]
+88 silly gunzTarPerm extractEntry demos/illustrated-infographic-coffee/index.html
+89 silly gunzTarPerm modified mode [ 'demos/illustrated-infographic-coffee/index.html', 436, 420 ]
+90 silly gunzTarPerm extractEntry demos/pattern/
+91 silly gunzTarPerm modified mode [ 'demos/pattern/', 509, 493 ]
+92 silly gunzTarPerm extractEntry demos/pattern/bg.png
+93 silly gunzTarPerm modified mode [ 'demos/pattern/bg.png', 436, 420 ]
+94 silly gunzTarPerm extractEntry demos/pattern/demo-card.svg
+95 silly gunzTarPerm modified mode [ 'demos/pattern/demo-card.svg', 436, 420 ]
+96 silly gunzTarPerm extractEntry demos/pattern/index.html
+97 silly gunzTarPerm modified mode [ 'demos/pattern/index.html', 436, 420 ]
+98 silly gunzTarPerm extractEntry demos/snap-ad/
+99 silly gunzTarPerm modified mode [ 'demos/snap-ad/', 509, 493 ]
+100 silly gunzTarPerm extractEntry demos/snap-ad/Gruntfile.js
+101 silly gunzTarPerm modified mode [ 'demos/snap-ad/Gruntfile.js', 436, 420 ]
+102 silly gunzTarPerm extractEntry demos/snap-ad/README.md
+103 silly gunzTarPerm modified mode [ 'demos/snap-ad/README.md', 436, 420 ]
+104 silly gunzTarPerm extractEntry demos/snap-ad/SnapAd.tmproj
+105 silly gunzTarPerm modified mode [ 'demos/snap-ad/SnapAd.tmproj', 436, 420 ]
+106 silly gunzTarPerm extractEntry demos/snap-ad/package.json
+107 silly gunzTarPerm modified mode [ 'demos/snap-ad/package.json', 436, 420 ]
+108 silly gunzTarPerm extractEntry demos/snap-ad/site/
+109 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/', 509, 493 ]
+110 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/
+111 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/', 509, 493 ]
+112 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/computer.svg
+113 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/computer.svg', 436, 420 ]
+114 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/fonts/
+115 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/fonts/', 509, 493 ]
+116 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/fonts/OpenSans-Light.ttf
+117 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/fonts/OpenSans-Light.ttf',
+117 silly gunzTarPerm   436,
+117 silly gunzTarPerm   420 ]
+118 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/fonts/SourceSansPro-Semibold.ttf
+119 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/fonts/SourceSansPro-Semibold.ttf',
+119 silly gunzTarPerm   436,
+119 silly gunzTarPerm   420 ]
+120 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/heart.svg
+121 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/heart.svg', 436, 420 ]
+122 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/phone.svg
+123 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/phone.svg', 436, 420 ]
+124 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/tablet.svg
+125 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/tablet.svg', 436, 420 ]
+126 silly gunzTarPerm extractEntry demos/snap-ad/site/backup.jpg
+127 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/backup.jpg', 436, 420 ]
+128 silly gunzTarPerm extractEntry demos/snap-ad/site/css/
+129 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/css/', 509, 493 ]
+130 silly gunzTarPerm extractEntry demos/snap-ad/site/css/screen.css
+131 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/css/screen.css', 436, 420 ]
+132 silly gunzTarPerm extractEntry demos/snap-ad/site/index.html
+133 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/index.html', 436, 420 ]
+134 silly gunzTarPerm extractEntry demos/snap-ad/site/index.min.html
+135 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/index.min.html', 436, 420 ]
+136 silly gunzTarPerm extractEntry demos/snap-ad/site/js/
+137 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/', 509, 493 ]
+138 silly gunzTarPerm extractEntry demos/snap-ad/site/js/main.js
+139 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/main.js', 436, 420 ]
+140 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/
+141 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/', 509, 493 ]
+142 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/modernizr.min.js
+143 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/modernizr.min.js', 436, 420 ]
+144 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/require.js
+145 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/require.js', 436, 420 ]
+146 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/require.min.js
+147 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/require.min.js', 436, 420 ]
+148 silly gunzTarPerm extractEntry demos/snap-ad/src/
+149 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/', 509, 493 ]
+150 silly gunzTarPerm extractEntry demos/snap-ad/src/.sass-cache/
+151 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/.sass-cache/', 509, 493 ]
+152 silly gunzTarPerm extractEntry demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/
+153 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/',
+153 silly gunzTarPerm   509,
+153 silly gunzTarPerm   493 ]
+154 silly gunzTarPerm extractEntry demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/screen.scssc
+155 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/screen.scssc',
+155 silly gunzTarPerm   436,
+155 silly gunzTarPerm   420 ]
+156 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/
+157 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/', 509, 493 ]
+158 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/computer.svg
+159 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/computer.svg', 436, 420 ]
+160 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/fonts/
+161 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/fonts/', 509, 493 ]
+162 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/fonts/OpenSans-Light.ttf
+163 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/fonts/OpenSans-Light.ttf', 509, 493 ]
+164 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/fonts/SourceSansPro-Semibold.ttf
+165 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/fonts/SourceSansPro-Semibold.ttf',
+165 silly gunzTarPerm   509,
+165 silly gunzTarPerm   493 ]
+166 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/heart.svg
+167 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/heart.svg', 436, 420 ]
+168 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/phone.svg
+169 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/phone.svg', 436, 420 ]
+170 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/tablet.svg
+171 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/tablet.svg', 436, 420 ]
+172 silly gunzTarPerm extractEntry demos/snap-ad/src/backup.jpg
+173 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/backup.jpg', 436, 420 ]
+174 silly gunzTarPerm extractEntry demos/snap-ad/src/config.rb
+175 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/config.rb', 436, 420 ]
+176 silly gunzTarPerm extractEntry demos/snap-ad/src/css/
+177 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/css/', 509, 493 ]
+178 silly gunzTarPerm extractEntry demos/snap-ad/src/css/screen.css
+179 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/css/screen.css', 436, 420 ]
+180 silly gunzTarPerm extractEntry demos/snap-ad/src/index.html
+181 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/index.html', 509, 493 ]
+182 silly gunzTarPerm extractEntry demos/snap-ad/src/js/
+183 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/', 509, 493 ]
+184 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/
+185 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/', 509, 493 ]
+186 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/app.js
+187 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/app.js', 436, 420 ]
+188 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/burst.js
+189 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/burst.js', 436, 420 ]
+190 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/device.js
+191 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/device.js', 436, 420 ]
+192 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/heart.js
+193 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/heart.js', 436, 420 ]
+194 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/logo.js
+195 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/logo.js', 436, 420 ]
+196 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/mesh.js
+197 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/mesh.js', 436, 420 ]
+198 silly gunzTarPerm extractEntry demos/snap-ad/src/js/main.js
+199 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/main.js', 436, 420 ]
+200 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/
+201 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/', 509, 493 ]
+202 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss.js
+203 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss.js', 509, 493 ]
+204 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/
+205 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/', 509, 493 ]
+206 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Color.js
+207 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Color.js', 509, 493 ]
+208 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Core.js
+209 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Core.js', 509, 493 ]
+210 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Geometry.js
+211 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Geometry.js', 509, 493 ]
+212 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Light.js
+213 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Light.js', 509, 493 ]
+214 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Material.js
+215 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Material.js', 509, 493 ]
+216 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Math.js
+217 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Math.js', 509, 493 ]
+218 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Mesh.js
+219 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Mesh.js', 509, 493 ]
+220 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Object.js
+221 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Object.js', 509, 493 ]
+222 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Plane.js
+223 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Plane.js', 509, 493 ]
+224 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Renderer.js
+225 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Renderer.js', 509, 493 ]
+226 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/SVGRenderer.js
+227 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/SVGRenderer.js', 509, 493 ]
+228 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Scene.js
+229 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Scene.js', 509, 493 ]
+230 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Triangle.js
+231 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Triangle.js', 509, 493 ]
+232 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Vector3.js
+233 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Vector3.js', 509, 493 ]
+234 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Vector4.js
+235 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Vector4.js', 509, 493 ]
+236 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Vertex.js
+237 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Vertex.js', 509, 493 ]
+238 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/modernizr.min.js
+239 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/modernizr.min.js', 436, 420 ]
+240 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/require.js
+241 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/require.js', 436, 420 ]
+242 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/require.min.js
+243 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/require.min.js', 436, 420 ]
+244 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/snap.svg-min.js
+245 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/snap.svg-min.js', 509, 493 ]
+246 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/snap.svg.js
+247 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/snap.svg.js', 509, 493 ]
+248 silly gunzTarPerm extractEntry demos/snap-ad/src/sass/
+249 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/sass/', 509, 493 ]
+250 silly gunzTarPerm extractEntry demos/snap-ad/src/sass/screen.scss
+251 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/sass/screen.scss', 436, 420 ]
+252 silly gunzTarPerm extractEntry demos/snap-mascot/
+253 silly gunzTarPerm modified mode [ 'demos/snap-mascot/', 509, 493 ]
+254 silly gunzTarPerm extractEntry demos/snap-mascot/crocodile-1.html
+255 silly gunzTarPerm modified mode [ 'demos/snap-mascot/crocodile-1.html', 436, 420 ]
+256 silly gunzTarPerm extractEntry demos/snap-mascot/crocodile-2.html
+257 silly gunzTarPerm modified mode [ 'demos/snap-mascot/crocodile-2.html', 436, 420 ]
+258 silly gunzTarPerm extractEntry demos/snap-mascot/index.html
+259 silly gunzTarPerm modified mode [ 'demos/snap-mascot/index.html', 436, 420 ]
+260 silly gunzTarPerm extractEntry demos/snap-mascot/snap-logo.html
+261 silly gunzTarPerm modified mode [ 'demos/snap-mascot/snap-logo.html', 436, 420 ]
+262 silly gunzTarPerm extractEntry demos/snap-mascot/style.css
+263 silly gunzTarPerm modified mode [ 'demos/snap-mascot/style.css', 436, 420 ]
+264 silly gunzTarPerm extractEntry demos/tutorial/
+265 silly gunzTarPerm modified mode [ 'demos/tutorial/', 509, 493 ]
+266 silly gunzTarPerm extractEntry demos/tutorial/1.html
+267 silly gunzTarPerm modified mode [ 'demos/tutorial/1.html', 436, 420 ]
+268 silly gunzTarPerm extractEntry demos/tutorial/2.html
+269 silly gunzTarPerm modified mode [ 'demos/tutorial/2.html', 436, 420 ]
+270 silly gunzTarPerm extractEntry demos/tutorial/3.html
+271 silly gunzTarPerm modified mode [ 'demos/tutorial/3.html', 436, 420 ]
+272 silly gunzTarPerm extractEntry demos/tutorial/4.html
+273 silly gunzTarPerm modified mode [ 'demos/tutorial/4.html', 436, 420 ]
+274 silly gunzTarPerm extractEntry demos/tutorial/index.html
+275 silly gunzTarPerm modified mode [ 'demos/tutorial/index.html', 436, 420 ]
+276 silly gunzTarPerm extractEntry demos/tutorial/mascot.svg
+277 silly gunzTarPerm modified mode [ 'demos/tutorial/mascot.svg', 436, 420 ]
+278 silly gunzTarPerm extractEntry demos/tutorial/tutorial.html
+279 silly gunzTarPerm modified mode [ 'demos/tutorial/tutorial.html', 436, 420 ]
+280 silly gunzTarPerm extractEntry dist/
+281 silly gunzTarPerm modified mode [ 'dist/', 509, 493 ]
+282 silly gunzTarPerm extractEntry dist/snap.svg-min.js
+283 silly gunzTarPerm modified mode [ 'dist/snap.svg-min.js', 436, 420 ]
+284 silly gunzTarPerm extractEntry dist/snap.svg.js
+285 silly gunzTarPerm modified mode [ 'dist/snap.svg.js', 436, 420 ]
+286 silly gunzTarPerm extractEntry doc/
+287 silly gunzTarPerm modified mode [ 'doc/', 509, 493 ]
+288 silly gunzTarPerm extractEntry doc/css/
+289 silly gunzTarPerm modified mode [ 'doc/css/', 509, 493 ]
+290 silly gunzTarPerm extractEntry doc/css/dr.css
+291 silly gunzTarPerm modified mode [ 'doc/css/dr.css', 436, 420 ]
+292 silly gunzTarPerm extractEntry doc/css/main.css
+293 silly gunzTarPerm modified mode [ 'doc/css/main.css', 436, 420 ]
+294 silly gunzTarPerm extractEntry doc/css/prism.css
+295 silly gunzTarPerm modified mode [ 'doc/css/prism.css', 436, 420 ]
+296 silly gunzTarPerm extractEntry doc/css/topcoat-desktop-light.css
+297 silly gunzTarPerm modified mode [ 'doc/css/topcoat-desktop-light.css', 436, 420 ]
+298 silly gunzTarPerm extractEntry doc/fonts/
+299 silly gunzTarPerm modified mode [ 'doc/fonts/', 509, 493 ]
+300 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.eot
+301 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.eot', 509, 493 ]
+302 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.svg
+303 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.svg', 509, 493 ]
+304 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.ttf
+305 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.ttf', 509, 493 ]
+306 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.woff
+307 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.woff', 509, 493 ]
+308 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.eot
+309 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.eot', 509, 493 ]
+310 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.svg
+311 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.svg', 509, 493 ]
+312 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.ttf
+313 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.ttf', 509, 493 ]
+314 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.woff
+315 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.woff', 509, 493 ]
+316 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.eot
+317 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.eot', 509, 493 ]
+318 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.svg
+319 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.svg', 509, 493 ]
+320 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.ttf
+321 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.ttf', 509, 493 ]
+322 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.woff
+323 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.woff', 509, 493 ]
+324 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.eot
+325 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.eot', 509, 493 ]
+326 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.svg
+327 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.svg', 509, 493 ]
+328 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.ttf
+329 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.ttf', 509, 493 ]
+330 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.woff
+331 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.woff', 509, 493 ]
+332 silly gunzTarPerm extractEntry doc/fonts/stylesheet.css
+333 silly gunzTarPerm modified mode [ 'doc/fonts/stylesheet.css', 509, 493 ]
+334 silly gunzTarPerm extractEntry doc/img/
+335 silly gunzTarPerm modified mode [ 'doc/img/', 509, 493 ]
+336 silly gunzTarPerm extractEntry doc/img/search.svg
+337 silly gunzTarPerm modified mode [ 'doc/img/search.svg', 436, 420 ]
+338 silly gunzTarPerm extractEntry doc/img/search_dark.svg
+339 silly gunzTarPerm modified mode [ 'doc/img/search_dark.svg', 436, 420 ]
+340 silly gunzTarPerm extractEntry doc/js/
+341 silly gunzTarPerm modified mode [ 'doc/js/', 509, 493 ]
+342 silly gunzTarPerm extractEntry doc/js/prism.js
+343 silly gunzTarPerm modified mode [ 'doc/js/prism.js', 436, 420 ]
+344 silly gunzTarPerm extractEntry doc/reference.html
+345 silly gunzTarPerm modified mode [ 'doc/reference.html', 436, 420 ]
+346 silly gunzTarPerm extractEntry dr.json
+347 silly gunzTarPerm modified mode [ 'dr.json', 436, 420 ]
+348 silly gunzTarPerm extractEntry history.md
+349 silly gunzTarPerm modified mode [ 'history.md', 436, 420 ]
+350 silly gunzTarPerm extractEntry package.json
+351 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+352 silly gunzTarPerm extractEntry src/
+353 silly gunzTarPerm modified mode [ 'src/', 509, 493 ]
+354 silly gunzTarPerm extractEntry src/align.js
+355 silly gunzTarPerm modified mode [ 'src/align.js', 436, 420 ]
+356 silly gunzTarPerm extractEntry src/amd-banner.js
+357 silly gunzTarPerm modified mode [ 'src/amd-banner.js', 436, 420 ]
+358 silly gunzTarPerm extractEntry src/amd-footer.js
+359 silly gunzTarPerm modified mode [ 'src/amd-footer.js', 436, 420 ]
+360 silly gunzTarPerm extractEntry src/attr.js
+361 silly gunzTarPerm modified mode [ 'src/attr.js', 436, 420 ]
+362 silly gunzTarPerm extractEntry src/attradd.js
+363 silly gunzTarPerm modified mode [ 'src/attradd.js', 436, 420 ]
+364 silly gunzTarPerm extractEntry src/class.js
+365 silly gunzTarPerm modified mode [ 'src/class.js', 436, 420 ]
+366 silly gunzTarPerm extractEntry src/copy.js
+367 silly gunzTarPerm modified mode [ 'src/copy.js', 436, 420 ]
+368 silly gunzTarPerm extractEntry src/element.js
+369 silly gunzTarPerm modified mode [ 'src/element.js', 436, 420 ]
+370 silly gunzTarPerm extractEntry src/equal.js
+371 silly gunzTarPerm modified mode [ 'src/equal.js', 436, 420 ]
+372 silly gunzTarPerm extractEntry src/filter.js
+373 silly gunzTarPerm modified mode [ 'src/filter.js', 436, 420 ]
+374 silly gunzTarPerm extractEntry src/matrix.js
+375 silly gunzTarPerm modified mode [ 'src/matrix.js', 436, 420 ]
+376 silly gunzTarPerm extractEntry src/mina.js
+377 silly gunzTarPerm modified mode [ 'src/mina.js', 436, 420 ]
+378 silly gunzTarPerm extractEntry src/mouse.js
+379 silly gunzTarPerm modified mode [ 'src/mouse.js', 436, 420 ]
+380 silly gunzTarPerm extractEntry src/paper.js
+381 silly gunzTarPerm modified mode [ 'src/paper.js', 436, 420 ]
+382 silly gunzTarPerm extractEntry src/path.js
+383 silly gunzTarPerm modified mode [ 'src/path.js', 436, 420 ]
+384 silly gunzTarPerm extractEntry src/set.js
+385 silly gunzTarPerm modified mode [ 'src/set.js', 436, 420 ]
+386 silly gunzTarPerm extractEntry src/svg.js
+387 silly gunzTarPerm modified mode [ 'src/svg.js', 436, 420 ]
+388 silly gunzTarPerm extractEntry template.dot
+389 silly gunzTarPerm modified mode [ 'template.dot', 436, 420 ]
+390 silly gunzTarPerm extractEntry test.html
+391 silly gunzTarPerm modified mode [ 'test.html', 436, 420 ]
+392 silly gunzTarPerm extractEntry test/
+393 silly gunzTarPerm modified mode [ 'test/', 509, 493 ]
+394 silly gunzTarPerm extractEntry test/attradd.js
+395 silly gunzTarPerm modified mode [ 'test/attradd.js', 436, 420 ]
+396 silly gunzTarPerm extractEntry test/attrs.js
+397 silly gunzTarPerm modified mode [ 'test/attrs.js', 436, 420 ]
+398 silly gunzTarPerm extractEntry test/class.js
+399 silly gunzTarPerm modified mode [ 'test/class.js', 436, 420 ]
+400 silly gunzTarPerm extractEntry test/colors.js
+401 silly gunzTarPerm modified mode [ 'test/colors.js', 436, 420 ]
+402 silly gunzTarPerm extractEntry test/element.js
+403 silly gunzTarPerm modified mode [ 'test/element.js', 436, 420 ]
+404 silly gunzTarPerm extractEntry test/filter.js
+405 silly gunzTarPerm modified mode [ 'test/filter.js', 436, 420 ]
+406 silly gunzTarPerm extractEntry test/matrix.js
+407 silly gunzTarPerm modified mode [ 'test/matrix.js', 436, 420 ]
+408 silly gunzTarPerm extractEntry test/mina.js
+409 silly gunzTarPerm modified mode [ 'test/mina.js', 436, 420 ]
+410 silly gunzTarPerm extractEntry test/paper.js
+411 silly gunzTarPerm modified mode [ 'test/paper.js', 436, 420 ]
+412 silly gunzTarPerm extractEntry test/path.js
+413 silly gunzTarPerm modified mode [ 'test/path.js', 436, 420 ]
+414 silly gunzTarPerm extractEntry test/primitives.js
+415 silly gunzTarPerm modified mode [ 'test/primitives.js', 436, 420 ]
+416 silly gunzTarPerm extractEntry test/res/
+417 silly gunzTarPerm modified mode [ 'test/res/', 509, 493 ]
+418 silly gunzTarPerm extractEntry test/res/external-svg.svg
+419 silly gunzTarPerm modified mode [ 'test/res/external-svg.svg', 436, 420 ]
+420 silly gunzTarPerm extractEntry test/res/file-for-ajax.txt
+421 silly gunzTarPerm modified mode [ 'test/res/file-for-ajax.txt', 436, 420 ]
+422 silly gunzTarPerm extractEntry test/set.js
+423 silly gunzTarPerm modified mode [ 'test/set.js', 436, 420 ]
+424 silly gunzTarPerm extractEntry test/snap-tests.js
+425 silly gunzTarPerm modified mode [ 'test/snap-tests.js', 436, 420 ]
+426 silly gunzTarPerm extractEntry test/system.js
+427 silly gunzTarPerm modified mode [ 'test/system.js', 436, 420 ]
+428 silly gunzTarPerm extractEntry test/test.html
+429 silly gunzTarPerm modified mode [ 'test/test.html', 436, 420 ]
+430 silly lockFile 101b0322-41793082212097943-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz-unpack
+431 silly lockFile 101b0322-41793082212097943-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz-unpack
+432 silly lockFile 5f243073-9670-0-41793082212097943-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz
+433 silly lockFile 5f243073-9670-0-41793082212097943-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-2185-ZUAJBYnl/1429390039670-0.41793082212097943/tmp.tgz
+434 silly lockFile f426ab0d-m-adobe-webplatform-Snap-svg-git git://github.com/adobe-webplatform/Snap.svg.git
+435 silly lockFile f426ab0d-m-adobe-webplatform-Snap-svg-git git://github.com/adobe-webplatform/Snap.svg.git
+436 silly resolved [ { name: 'snapsvg',
+436 silly resolved     version: '0.4.1',
+436 silly resolved     description: 'JavaScript Vector Library',
+436 silly resolved     main: './dist/snap.svg.js',
+436 silly resolved     repository:
+436 silly resolved      { type: 'git',
+436 silly resolved        url: 'git@github.com:adobe-webplatform/Snap.svg.git' },
+436 silly resolved     author: { name: 'Dmitry Baranovskiy' },
+436 silly resolved     license: 'Apache License v2',
+436 silly resolved     dependencies: { eve: '~0.4.2' },
+436 silly resolved     devDependencies:
+436 silly resolved      { grunt: '~0.4.1',
+436 silly resolved        'grunt-contrib-uglify': '~0.2.0',
+436 silly resolved        'grunt-contrib-concat': '~0.3.0',
+436 silly resolved        'grunt-exec': '~0.4.2',
+436 silly resolved        mocha: '*',
+436 silly resolved        'expect.js': '*',
+436 silly resolved        'dr.js': '~0.1.0' },
+436 silly resolved     readme: '[Snap.svg](http://snapsvg.io)\n======\n\nA JavaScript SVG library for the modern web. Learn more at [snapsvg.io](http://snapsvg.io).\n\n[Follow us on Twitter.](https://twitter.com/snapsvg)\n\n### Install\n* [Bower](http://bower.io/) - `bower install snap.svg`\n* Manual Minified - https://github.com/adobe-webplatform/Snap.svg/raw/master/dist/snap.svg-min.js\n* Manual Unminified - https://raw.githubusercontent.com/adobe-webplatform/Snap.svg/master/dist/snap.svg.js\n\n\n### Learn\n\n* [About Snap.svg](http://snapsvg.io/about/)\n* [Getting Started](http://snapsvg.io/start/)\n* [API Reference](http://snapsvg.io/docs/)\n\n### Use\n\nIn your HTML file, load simply by: `<script src="snap.svg-min.js"></script>`\nNo other scripts are needed. Both the minified and uncompressed (for development) versions are in the `/dist` folder.\n\n### Build\n\nSnap.svg uses [Grunt](http://gruntjs.com/) to build.\n\n* Open the terminal from the Snap.svg directory:\n\n        cd Snap.svg\n\n* Install its command line interface (CLI) globally:\n\n        npm install -g grunt-cli\n\n_*You might need to use `sudo npm`, depending on your configuration._\n\n* Install dependencies with npm:\n\n        npm install\n\n_*Snap.svg uses Grunt 0.4.0. You might want to [read](http://gruntjs.com/getting-started) more on their website if you haven’t upgraded since a lot has changed._\n\n* Type `grunt` in the command line to build the files.\n* The results will be built into the release folder.\n* Alternatively type `grunt watch` to have the build run automatically when you make changes to source files.\n\n### Contribute\n\n* [Fill out the CLA](http://snapsvg.io/contributions/).\n* [Fork](https://help.github.com/articles/fork-a-repo) the repo.\n* Create a branch:\n\n        git checkout -b my_branch\n\n* Add your changes.\n* Commit your changes:\n\n        git commit -am "Added some awesome stuff"\n\n* Push your branch:\n\n        git push origin my_branch\n\n* Make a [pull request](https://help.github.com/articles/using-pull-requests) to `dev` branch.\n\n*Note:* Pull requests to other branches than `dev` or without filled CLA wouldn’t be accepted.\n',
+436 silly resolved     readmeFilename: 'README.md',
+436 silly resolved     bugs: { url: 'https://github.com/adobe-webplatform/Snap.svg/issues' },
+436 silly resolved     homepage: 'https://github.com/adobe-webplatform/Snap.svg',
+436 silly resolved     _id: 'snapsvg@0.4.1',
+436 silly resolved     _shasum: '987f98b53645fa3e3d908d7ae1de663ae087e64d',
+436 silly resolved     _resolved: 'git://github.com/adobe-webplatform/Snap.svg.git#d2701c4fb0eb802bcb4f5b70f20b822ee9342dcf',
+436 silly resolved     _from: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev' } ]
+437 info install snapsvg@0.4.1 into /Users/jftesser/Documents/Projects/hue plan/web
+438 info installOne snapsvg@0.4.1
+439 verbose node_modules/snapsvg unbuild
+440 info preuninstall snapsvg@0.4.1
+441 info uninstall snapsvg@0.4.1
+442 verbose true,/Users/jftesser/Documents/Projects/hue plan/web/node_modules,/Users/jftesser/Documents/Projects/hue plan/web/node_modules unbuild snapsvg@0.4.1
+443 info postuninstall snapsvg@0.4.1
+444 verbose tar unpack /Users/jftesser/.npm/snapsvg/0.4.1/package.tgz
+445 silly lockFile fe750b9a-ue-plan-web-node-modules-snapsvg tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg
+446 verbose lock tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg /Users/jftesser/.npm/fe750b9a-ue-plan-web-node-modules-snapsvg.lock
+447 silly lockFile b47ff3b1-er-npm-snapsvg-0-4-1-package-tgz tar:///Users/jftesser/.npm/snapsvg/0.4.1/package.tgz
+448 verbose lock tar:///Users/jftesser/.npm/snapsvg/0.4.1/package.tgz /Users/jftesser/.npm/b47ff3b1-er-npm-snapsvg-0-4-1-package-tgz.lock
+449 silly gunzTarPerm modes [ '755', '644' ]
+450 silly gunzTarPerm extractEntry
+451 silly gunzTarPerm modified mode [ '', 509, 493 ]
+452 silly gunzTarPerm extractEntry .gitignore
+453 silly gunzTarPerm modified mode [ '.gitignore', 436, 420 ]
+454 silly gunzTarPerm extractEntry .gitmodules
+455 silly gunzTarPerm modified mode [ '.gitmodules', 436, 420 ]
+456 silly gunzTarPerm extractEntry CONTRIBUTING
+457 silly gunzTarPerm modified mode [ 'CONTRIBUTING', 436, 420 ]
+458 silly gunzTarPerm extractEntry Gruntfile.js
+459 silly gunzTarPerm modified mode [ 'Gruntfile.js', 436, 420 ]
+460 silly gunzTarPerm extractEntry LICENSE
+461 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+462 silly gunzTarPerm extractEntry NOTICE
+463 silly gunzTarPerm modified mode [ 'NOTICE', 436, 420 ]
+464 silly gunzTarPerm extractEntry README.md
+465 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+466 silly gunzTarPerm extractEntry bower.json
+467 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+468 silly gunzTarPerm extractEntry component.json
+469 silly gunzTarPerm modified mode [ 'component.json', 436, 420 ]
+470 silly gunzTarPerm extractEntry demos/
+471 silly gunzTarPerm modified mode [ 'demos/', 509, 493 ]
+472 silly gunzTarPerm extractEntry demos/animated-game/
+473 silly gunzTarPerm modified mode [ 'demos/animated-game/', 509, 493 ]
+474 silly gunzTarPerm extractEntry demos/animated-game/index.html
+475 silly gunzTarPerm modified mode [ 'demos/animated-game/index.html', 509, 493 ]
+476 silly gunzTarPerm extractEntry demos/animated-game/js/
+477 silly gunzTarPerm modified mode [ 'demos/animated-game/js/', 509, 493 ]
+478 silly gunzTarPerm extractEntry demos/animated-game/js/backbone.js
+479 silly gunzTarPerm modified mode [ 'demos/animated-game/js/backbone.js', 436, 420 ]
+480 silly gunzTarPerm extractEntry demos/animated-game/js/jquery-1.9.0.min.js
+481 silly gunzTarPerm modified mode [ 'demos/animated-game/js/jquery-1.9.0.min.js', 436, 420 ]
+482 silly gunzTarPerm extractEntry demos/animated-game/js/main.js
+483 silly gunzTarPerm modified mode [ 'demos/animated-game/js/main.js', 436, 420 ]
+484 silly gunzTarPerm extractEntry demos/animated-game/js/path-animal.js
+485 silly gunzTarPerm modified mode [ 'demos/animated-game/js/path-animal.js', 436, 420 ]
+486 silly gunzTarPerm extractEntry demos/animated-game/js/seedrandom.js
+487 silly gunzTarPerm modified mode [ 'demos/animated-game/js/seedrandom.js', 436, 420 ]
+488 silly gunzTarPerm extractEntry demos/animated-game/js/snap.svg.js
+489 silly gunzTarPerm modified mode [ 'demos/animated-game/js/snap.svg.js', 509, 493 ]
+490 silly gunzTarPerm extractEntry demos/animated-game/js/tree-face.js
+491 silly gunzTarPerm modified mode [ 'demos/animated-game/js/tree-face.js', 436, 420 ]
+492 silly gunzTarPerm extractEntry demos/animated-game/js/underscore.js
+493 silly gunzTarPerm modified mode [ 'demos/animated-game/js/underscore.js', 436, 420 ]
+494 silly gunzTarPerm extractEntry demos/animated-map/
+495 silly gunzTarPerm modified mode [ 'demos/animated-map/', 509, 493 ]
+496 silly gunzTarPerm extractEntry demos/animated-map/index.html
+497 silly gunzTarPerm modified mode [ 'demos/animated-map/index.html', 436, 420 ]
+498 silly gunzTarPerm extractEntry demos/animated-map/map.svg
+499 silly gunzTarPerm modified mode [ 'demos/animated-map/map.svg', 436, 420 ]
+500 silly gunzTarPerm extractEntry demos/clock/
+501 silly gunzTarPerm modified mode [ 'demos/clock/', 509, 493 ]
+502 silly gunzTarPerm extractEntry demos/clock/index.html
+503 silly gunzTarPerm modified mode [ 'demos/clock/index.html', 436, 420 ]
+504 silly gunzTarPerm extractEntry demos/illustrated-infographic-coffee/
+505 silly gunzTarPerm modified mode [ 'demos/illustrated-infographic-coffee/', 509, 493 ]
+506 silly gunzTarPerm extractEntry demos/illustrated-infographic-coffee/demo.svg
+507 silly gunzTarPerm modified mode [ 'demos/illustrated-infographic-coffee/demo.svg', 436, 420 ]
+508 silly gunzTarPerm extractEntry demos/illustrated-infographic-coffee/index.html
+509 silly gunzTarPerm modified mode [ 'demos/illustrated-infographic-coffee/index.html', 436, 420 ]
+510 silly gunzTarPerm extractEntry demos/pattern/
+511 silly gunzTarPerm modified mode [ 'demos/pattern/', 509, 493 ]
+512 silly gunzTarPerm extractEntry demos/pattern/bg.png
+513 silly gunzTarPerm modified mode [ 'demos/pattern/bg.png', 436, 420 ]
+514 silly gunzTarPerm extractEntry demos/pattern/demo-card.svg
+515 silly gunzTarPerm modified mode [ 'demos/pattern/demo-card.svg', 436, 420 ]
+516 silly gunzTarPerm extractEntry demos/pattern/index.html
+517 silly gunzTarPerm modified mode [ 'demos/pattern/index.html', 436, 420 ]
+518 silly gunzTarPerm extractEntry demos/snap-ad/
+519 silly gunzTarPerm modified mode [ 'demos/snap-ad/', 509, 493 ]
+520 silly gunzTarPerm extractEntry demos/snap-ad/Gruntfile.js
+521 silly gunzTarPerm modified mode [ 'demos/snap-ad/Gruntfile.js', 436, 420 ]
+522 silly gunzTarPerm extractEntry demos/snap-ad/README.md
+523 silly gunzTarPerm modified mode [ 'demos/snap-ad/README.md', 436, 420 ]
+524 silly gunzTarPerm extractEntry demos/snap-ad/SnapAd.tmproj
+525 silly gunzTarPerm modified mode [ 'demos/snap-ad/SnapAd.tmproj', 436, 420 ]
+526 silly gunzTarPerm extractEntry demos/snap-ad/package.json
+527 silly gunzTarPerm modified mode [ 'demos/snap-ad/package.json', 436, 420 ]
+528 silly gunzTarPerm extractEntry demos/snap-ad/site/
+529 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/', 509, 493 ]
+530 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/
+531 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/', 509, 493 ]
+532 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/computer.svg
+533 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/computer.svg', 436, 420 ]
+534 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/fonts/
+535 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/fonts/', 509, 493 ]
+536 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/fonts/OpenSans-Light.ttf
+537 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/fonts/OpenSans-Light.ttf',
+537 silly gunzTarPerm   436,
+537 silly gunzTarPerm   420 ]
+538 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/fonts/SourceSansPro-Semibold.ttf
+539 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/fonts/SourceSansPro-Semibold.ttf',
+539 silly gunzTarPerm   436,
+539 silly gunzTarPerm   420 ]
+540 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/heart.svg
+541 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/heart.svg', 436, 420 ]
+542 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/phone.svg
+543 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/phone.svg', 436, 420 ]
+544 silly gunzTarPerm extractEntry demos/snap-ad/site/assets/tablet.svg
+545 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/assets/tablet.svg', 436, 420 ]
+546 silly gunzTarPerm extractEntry demos/snap-ad/site/backup.jpg
+547 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/backup.jpg', 436, 420 ]
+548 silly gunzTarPerm extractEntry demos/snap-ad/site/css/
+549 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/css/', 509, 493 ]
+550 silly gunzTarPerm extractEntry demos/snap-ad/site/css/screen.css
+551 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/css/screen.css', 436, 420 ]
+552 silly gunzTarPerm extractEntry demos/snap-ad/site/index.html
+553 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/index.html', 436, 420 ]
+554 silly gunzTarPerm extractEntry demos/snap-ad/site/index.min.html
+555 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/index.min.html', 436, 420 ]
+556 silly gunzTarPerm extractEntry demos/snap-ad/site/js/
+557 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/', 509, 493 ]
+558 silly gunzTarPerm extractEntry demos/snap-ad/site/js/main.js
+559 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/main.js', 436, 420 ]
+560 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/
+561 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/', 509, 493 ]
+562 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/modernizr.min.js
+563 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/modernizr.min.js', 436, 420 ]
+564 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/require.js
+565 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/require.js', 436, 420 ]
+566 silly gunzTarPerm extractEntry demos/snap-ad/site/js/vendor/require.min.js
+567 silly gunzTarPerm modified mode [ 'demos/snap-ad/site/js/vendor/require.min.js', 436, 420 ]
+568 silly gunzTarPerm extractEntry demos/snap-ad/src/
+569 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/', 509, 493 ]
+570 silly gunzTarPerm extractEntry demos/snap-ad/src/.sass-cache/
+571 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/.sass-cache/', 509, 493 ]
+572 silly gunzTarPerm extractEntry demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/
+573 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/',
+573 silly gunzTarPerm   509,
+573 silly gunzTarPerm   493 ]
+574 silly gunzTarPerm extractEntry demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/screen.scssc
+575 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/.sass-cache/7eb2e4ecfecd432261de95f74b5302c6e0956ac9/screen.scssc',
+575 silly gunzTarPerm   436,
+575 silly gunzTarPerm   420 ]
+576 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/
+577 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/', 509, 493 ]
+578 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/computer.svg
+579 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/computer.svg', 436, 420 ]
+580 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/fonts/
+581 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/fonts/', 509, 493 ]
+582 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/fonts/OpenSans-Light.ttf
+583 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/fonts/OpenSans-Light.ttf', 509, 493 ]
+584 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/fonts/SourceSansPro-Semibold.ttf
+585 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/fonts/SourceSansPro-Semibold.ttf',
+585 silly gunzTarPerm   509,
+585 silly gunzTarPerm   493 ]
+586 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/heart.svg
+587 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/heart.svg', 436, 420 ]
+588 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/phone.svg
+589 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/phone.svg', 436, 420 ]
+590 silly gunzTarPerm extractEntry demos/snap-ad/src/assets/tablet.svg
+591 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/assets/tablet.svg', 436, 420 ]
+592 silly gunzTarPerm extractEntry demos/snap-ad/src/backup.jpg
+593 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/backup.jpg', 436, 420 ]
+594 silly gunzTarPerm extractEntry demos/snap-ad/src/config.rb
+595 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/config.rb', 436, 420 ]
+596 silly gunzTarPerm extractEntry demos/snap-ad/src/css/
+597 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/css/', 509, 493 ]
+598 silly gunzTarPerm extractEntry demos/snap-ad/src/css/screen.css
+599 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/css/screen.css', 436, 420 ]
+600 silly gunzTarPerm extractEntry demos/snap-ad/src/index.html
+601 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/index.html', 509, 493 ]
+602 silly gunzTarPerm extractEntry demos/snap-ad/src/js/
+603 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/', 509, 493 ]
+604 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/
+605 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/', 509, 493 ]
+606 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/app.js
+607 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/app.js', 436, 420 ]
+608 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/burst.js
+609 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/burst.js', 436, 420 ]
+610 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/device.js
+611 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/device.js', 436, 420 ]
+612 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/heart.js
+613 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/heart.js', 436, 420 ]
+614 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/logo.js
+615 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/logo.js', 436, 420 ]
+616 silly gunzTarPerm extractEntry demos/snap-ad/src/js/app/mesh.js
+617 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/app/mesh.js', 436, 420 ]
+618 silly gunzTarPerm extractEntry demos/snap-ad/src/js/main.js
+619 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/main.js', 436, 420 ]
+620 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/
+621 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/', 509, 493 ]
+622 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss.js
+623 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss.js', 509, 493 ]
+624 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/
+625 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/', 509, 493 ]
+626 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Color.js
+627 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Color.js', 509, 493 ]
+628 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Core.js
+629 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Core.js', 509, 493 ]
+630 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Geometry.js
+631 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Geometry.js', 509, 493 ]
+632 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Light.js
+633 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Light.js', 509, 493 ]
+634 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Material.js
+635 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Material.js', 509, 493 ]
+636 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Math.js
+637 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Math.js', 509, 493 ]
+638 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Mesh.js
+639 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Mesh.js', 509, 493 ]
+640 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Object.js
+641 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Object.js', 509, 493 ]
+642 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Plane.js
+643 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Plane.js', 509, 493 ]
+644 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Renderer.js
+645 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Renderer.js', 509, 493 ]
+646 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/SVGRenderer.js
+647 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/SVGRenderer.js', 509, 493 ]
+648 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Scene.js
+649 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Scene.js', 509, 493 ]
+650 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Triangle.js
+651 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Triangle.js', 509, 493 ]
+652 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Vector3.js
+653 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Vector3.js', 509, 493 ]
+654 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Vector4.js
+655 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Vector4.js', 509, 493 ]
+656 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/fss/Vertex.js
+657 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/fss/Vertex.js', 509, 493 ]
+658 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/modernizr.min.js
+659 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/modernizr.min.js', 436, 420 ]
+660 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/require.js
+661 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/require.js', 436, 420 ]
+662 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/require.min.js
+663 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/require.min.js', 436, 420 ]
+664 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/snap.svg-min.js
+665 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/snap.svg-min.js', 509, 493 ]
+666 silly gunzTarPerm extractEntry demos/snap-ad/src/js/vendor/snap.svg.js
+667 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/js/vendor/snap.svg.js', 509, 493 ]
+668 silly gunzTarPerm extractEntry demos/snap-ad/src/sass/
+669 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/sass/', 509, 493 ]
+670 silly gunzTarPerm extractEntry demos/snap-ad/src/sass/screen.scss
+671 silly gunzTarPerm modified mode [ 'demos/snap-ad/src/sass/screen.scss', 436, 420 ]
+672 silly gunzTarPerm extractEntry demos/snap-mascot/
+673 silly gunzTarPerm modified mode [ 'demos/snap-mascot/', 509, 493 ]
+674 silly gunzTarPerm extractEntry demos/snap-mascot/crocodile-1.html
+675 silly gunzTarPerm modified mode [ 'demos/snap-mascot/crocodile-1.html', 436, 420 ]
+676 silly gunzTarPerm extractEntry demos/snap-mascot/crocodile-2.html
+677 silly gunzTarPerm modified mode [ 'demos/snap-mascot/crocodile-2.html', 436, 420 ]
+678 silly gunzTarPerm extractEntry demos/snap-mascot/index.html
+679 silly gunzTarPerm modified mode [ 'demos/snap-mascot/index.html', 436, 420 ]
+680 silly gunzTarPerm extractEntry demos/snap-mascot/snap-logo.html
+681 silly gunzTarPerm modified mode [ 'demos/snap-mascot/snap-logo.html', 436, 420 ]
+682 silly gunzTarPerm extractEntry demos/snap-mascot/style.css
+683 silly gunzTarPerm modified mode [ 'demos/snap-mascot/style.css', 436, 420 ]
+684 silly gunzTarPerm extractEntry demos/tutorial/
+685 silly gunzTarPerm modified mode [ 'demos/tutorial/', 509, 493 ]
+686 silly gunzTarPerm extractEntry demos/tutorial/1.html
+687 silly gunzTarPerm modified mode [ 'demos/tutorial/1.html', 436, 420 ]
+688 silly gunzTarPerm extractEntry demos/tutorial/2.html
+689 silly gunzTarPerm modified mode [ 'demos/tutorial/2.html', 436, 420 ]
+690 silly gunzTarPerm extractEntry demos/tutorial/3.html
+691 silly gunzTarPerm modified mode [ 'demos/tutorial/3.html', 436, 420 ]
+692 silly gunzTarPerm extractEntry demos/tutorial/4.html
+693 silly gunzTarPerm modified mode [ 'demos/tutorial/4.html', 436, 420 ]
+694 silly gunzTarPerm extractEntry demos/tutorial/index.html
+695 silly gunzTarPerm modified mode [ 'demos/tutorial/index.html', 436, 420 ]
+696 silly gunzTarPerm extractEntry demos/tutorial/mascot.svg
+697 silly gunzTarPerm modified mode [ 'demos/tutorial/mascot.svg', 436, 420 ]
+698 silly gunzTarPerm extractEntry demos/tutorial/tutorial.html
+699 silly gunzTarPerm modified mode [ 'demos/tutorial/tutorial.html', 436, 420 ]
+700 silly gunzTarPerm extractEntry dist/
+701 silly gunzTarPerm modified mode [ 'dist/', 509, 493 ]
+702 silly gunzTarPerm extractEntry dist/snap.svg-min.js
+703 silly gunzTarPerm modified mode [ 'dist/snap.svg-min.js', 436, 420 ]
+704 silly gunzTarPerm extractEntry dist/snap.svg.js
+705 silly gunzTarPerm modified mode [ 'dist/snap.svg.js', 436, 420 ]
+706 silly gunzTarPerm extractEntry doc/
+707 silly gunzTarPerm modified mode [ 'doc/', 509, 493 ]
+708 silly gunzTarPerm extractEntry doc/css/
+709 silly gunzTarPerm modified mode [ 'doc/css/', 509, 493 ]
+710 silly gunzTarPerm extractEntry doc/css/dr.css
+711 silly gunzTarPerm modified mode [ 'doc/css/dr.css', 436, 420 ]
+712 silly gunzTarPerm extractEntry doc/css/main.css
+713 silly gunzTarPerm modified mode [ 'doc/css/main.css', 436, 420 ]
+714 silly gunzTarPerm extractEntry doc/css/prism.css
+715 silly gunzTarPerm modified mode [ 'doc/css/prism.css', 436, 420 ]
+716 silly gunzTarPerm extractEntry doc/css/topcoat-desktop-light.css
+717 silly gunzTarPerm modified mode [ 'doc/css/topcoat-desktop-light.css', 436, 420 ]
+718 silly gunzTarPerm extractEntry doc/fonts/
+719 silly gunzTarPerm modified mode [ 'doc/fonts/', 509, 493 ]
+720 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.eot
+721 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.eot', 509, 493 ]
+722 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.svg
+723 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.svg', 509, 493 ]
+724 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.ttf
+725 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.ttf', 509, 493 ]
+726 silly gunzTarPerm extractEntry doc/fonts/sourcecodepro-regular-webfont.woff
+727 silly gunzTarPerm modified mode [ 'doc/fonts/sourcecodepro-regular-webfont.woff', 509, 493 ]
+728 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.eot
+729 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.eot', 509, 493 ]
+730 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.svg
+731 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.svg', 509, 493 ]
+732 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.ttf
+733 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.ttf', 509, 493 ]
+734 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-light-webfont.woff
+735 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-light-webfont.woff', 509, 493 ]
+736 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.eot
+737 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.eot', 509, 493 ]
+738 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.svg
+739 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.svg', 509, 493 ]
+740 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.ttf
+741 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.ttf', 509, 493 ]
+742 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-regular-webfont.woff
+743 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-regular-webfont.woff', 509, 493 ]
+744 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.eot
+745 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.eot', 509, 493 ]
+746 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.svg
+747 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.svg', 509, 493 ]
+748 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.ttf
+749 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.ttf', 509, 493 ]
+750 silly gunzTarPerm extractEntry doc/fonts/sourcesanspro-semibold-webfont.woff
+751 silly gunzTarPerm modified mode [ 'doc/fonts/sourcesanspro-semibold-webfont.woff', 509, 493 ]
+752 silly gunzTarPerm extractEntry doc/fonts/stylesheet.css
+753 silly gunzTarPerm modified mode [ 'doc/fonts/stylesheet.css', 509, 493 ]
+754 silly gunzTarPerm extractEntry doc/img/
+755 silly gunzTarPerm modified mode [ 'doc/img/', 509, 493 ]
+756 silly gunzTarPerm extractEntry doc/img/search.svg
+757 silly gunzTarPerm modified mode [ 'doc/img/search.svg', 436, 420 ]
+758 silly gunzTarPerm extractEntry doc/img/search_dark.svg
+759 silly gunzTarPerm modified mode [ 'doc/img/search_dark.svg', 436, 420 ]
+760 silly gunzTarPerm extractEntry doc/js/
+761 silly gunzTarPerm modified mode [ 'doc/js/', 509, 493 ]
+762 silly gunzTarPerm extractEntry doc/js/prism.js
+763 silly gunzTarPerm modified mode [ 'doc/js/prism.js', 436, 420 ]
+764 silly gunzTarPerm extractEntry doc/reference.html
+765 silly gunzTarPerm modified mode [ 'doc/reference.html', 436, 420 ]
+766 silly gunzTarPerm extractEntry dr.json
+767 silly gunzTarPerm modified mode [ 'dr.json', 436, 420 ]
+768 silly gunzTarPerm extractEntry history.md
+769 silly gunzTarPerm modified mode [ 'history.md', 436, 420 ]
+770 silly gunzTarPerm extractEntry package.json
+771 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+772 silly gunzTarPerm extractEntry src/
+773 silly gunzTarPerm modified mode [ 'src/', 509, 493 ]
+774 silly gunzTarPerm extractEntry src/align.js
+775 silly gunzTarPerm modified mode [ 'src/align.js', 436, 420 ]
+776 silly gunzTarPerm extractEntry src/amd-banner.js
+777 silly gunzTarPerm modified mode [ 'src/amd-banner.js', 436, 420 ]
+778 silly gunzTarPerm extractEntry src/amd-footer.js
+779 silly gunzTarPerm modified mode [ 'src/amd-footer.js', 436, 420 ]
+780 silly gunzTarPerm extractEntry src/attr.js
+781 silly gunzTarPerm modified mode [ 'src/attr.js', 436, 420 ]
+782 silly gunzTarPerm extractEntry src/attradd.js
+783 silly gunzTarPerm modified mode [ 'src/attradd.js', 436, 420 ]
+784 silly gunzTarPerm extractEntry src/class.js
+785 silly gunzTarPerm modified mode [ 'src/class.js', 436, 420 ]
+786 silly gunzTarPerm extractEntry src/copy.js
+787 silly gunzTarPerm modified mode [ 'src/copy.js', 436, 420 ]
+788 silly gunzTarPerm extractEntry src/element.js
+789 silly gunzTarPerm modified mode [ 'src/element.js', 436, 420 ]
+790 silly gunzTarPerm extractEntry src/equal.js
+791 silly gunzTarPerm modified mode [ 'src/equal.js', 436, 420 ]
+792 silly gunzTarPerm extractEntry src/filter.js
+793 silly gunzTarPerm modified mode [ 'src/filter.js', 436, 420 ]
+794 silly gunzTarPerm extractEntry src/matrix.js
+795 silly gunzTarPerm modified mode [ 'src/matrix.js', 436, 420 ]
+796 silly gunzTarPerm extractEntry src/mina.js
+797 silly gunzTarPerm modified mode [ 'src/mina.js', 436, 420 ]
+798 silly gunzTarPerm extractEntry src/mouse.js
+799 silly gunzTarPerm modified mode [ 'src/mouse.js', 436, 420 ]
+800 silly gunzTarPerm extractEntry src/paper.js
+801 silly gunzTarPerm modified mode [ 'src/paper.js', 436, 420 ]
+802 silly gunzTarPerm extractEntry src/path.js
+803 silly gunzTarPerm modified mode [ 'src/path.js', 436, 420 ]
+804 silly gunzTarPerm extractEntry src/set.js
+805 silly gunzTarPerm modified mode [ 'src/set.js', 436, 420 ]
+806 silly gunzTarPerm extractEntry src/svg.js
+807 silly gunzTarPerm modified mode [ 'src/svg.js', 436, 420 ]
+808 silly gunzTarPerm extractEntry template.dot
+809 silly gunzTarPerm modified mode [ 'template.dot', 436, 420 ]
+810 silly gunzTarPerm extractEntry test.html
+811 silly gunzTarPerm modified mode [ 'test.html', 436, 420 ]
+812 silly gunzTarPerm extractEntry test/
+813 silly gunzTarPerm modified mode [ 'test/', 509, 493 ]
+814 silly gunzTarPerm extractEntry test/attradd.js
+815 silly gunzTarPerm modified mode [ 'test/attradd.js', 436, 420 ]
+816 silly gunzTarPerm extractEntry test/attrs.js
+817 silly gunzTarPerm modified mode [ 'test/attrs.js', 436, 420 ]
+818 silly gunzTarPerm extractEntry test/class.js
+819 silly gunzTarPerm modified mode [ 'test/class.js', 436, 420 ]
+820 silly gunzTarPerm extractEntry test/colors.js
+821 silly gunzTarPerm modified mode [ 'test/colors.js', 436, 420 ]
+822 silly gunzTarPerm extractEntry test/element.js
+823 silly gunzTarPerm modified mode [ 'test/element.js', 436, 420 ]
+824 silly gunzTarPerm extractEntry test/filter.js
+825 silly gunzTarPerm modified mode [ 'test/filter.js', 436, 420 ]
+826 silly gunzTarPerm extractEntry test/matrix.js
+827 silly gunzTarPerm modified mode [ 'test/matrix.js', 436, 420 ]
+828 silly gunzTarPerm extractEntry test/mina.js
+829 silly gunzTarPerm modified mode [ 'test/mina.js', 436, 420 ]
+830 silly gunzTarPerm extractEntry test/paper.js
+831 silly gunzTarPerm modified mode [ 'test/paper.js', 436, 420 ]
+832 silly gunzTarPerm extractEntry test/path.js
+833 silly gunzTarPerm modified mode [ 'test/path.js', 436, 420 ]
+834 silly gunzTarPerm extractEntry test/primitives.js
+835 silly gunzTarPerm modified mode [ 'test/primitives.js', 436, 420 ]
+836 silly gunzTarPerm extractEntry test/res/
+837 silly gunzTarPerm modified mode [ 'test/res/', 509, 493 ]
+838 silly gunzTarPerm extractEntry test/res/external-svg.svg
+839 silly gunzTarPerm modified mode [ 'test/res/external-svg.svg', 436, 420 ]
+840 silly gunzTarPerm extractEntry test/res/file-for-ajax.txt
+841 silly gunzTarPerm modified mode [ 'test/res/file-for-ajax.txt', 436, 420 ]
+842 silly gunzTarPerm extractEntry test/set.js
+843 silly gunzTarPerm modified mode [ 'test/set.js', 436, 420 ]
+844 silly gunzTarPerm extractEntry test/snap-tests.js
+845 silly gunzTarPerm modified mode [ 'test/snap-tests.js', 436, 420 ]
+846 silly gunzTarPerm extractEntry test/system.js
+847 silly gunzTarPerm modified mode [ 'test/system.js', 436, 420 ]
+848 silly gunzTarPerm extractEntry test/test.html
+849 silly gunzTarPerm modified mode [ 'test/test.html', 436, 420 ]
+850 silly lockFile fe750b9a-ue-plan-web-node-modules-snapsvg tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg
+851 silly lockFile fe750b9a-ue-plan-web-node-modules-snapsvg tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg
+852 silly lockFile b47ff3b1-er-npm-snapsvg-0-4-1-package-tgz tar:///Users/jftesser/.npm/snapsvg/0.4.1/package.tgz
+853 silly lockFile b47ff3b1-er-npm-snapsvg-0-4-1-package-tgz tar:///Users/jftesser/.npm/snapsvg/0.4.1/package.tgz
+854 info preinstall snapsvg@0.4.1
+855 verbose readDependencies using package.json deps
+856 verbose readDependencies using package.json deps
+857 verbose cache add [ 'eve@~0.4.2', null ]
+858 verbose cache add name=undefined spec="eve@~0.4.2" args=["eve@~0.4.2",null]
+859 verbose parsed url { protocol: null,
+859 verbose parsed url   slashes: null,
+859 verbose parsed url   auth: null,
+859 verbose parsed url   host: null,
+859 verbose parsed url   port: null,
+859 verbose parsed url   hostname: null,
+859 verbose parsed url   hash: null,
+859 verbose parsed url   search: null,
+859 verbose parsed url   query: null,
+859 verbose parsed url   pathname: 'eve@~0.4.2',
+859 verbose parsed url   path: 'eve@~0.4.2',
+859 verbose parsed url   href: 'eve@~0.4.2' }
+860 verbose cache add name="eve" spec="~0.4.2" args=["eve","~0.4.2"]
+861 verbose parsed url { protocol: null,
+861 verbose parsed url   slashes: null,
+861 verbose parsed url   auth: null,
+861 verbose parsed url   host: null,
+861 verbose parsed url   port: null,
+861 verbose parsed url   hostname: null,
+861 verbose parsed url   hash: null,
+861 verbose parsed url   search: null,
+861 verbose parsed url   query: null,
+861 verbose parsed url   pathname: '~0.4.2',
+861 verbose parsed url   path: '~0.4.2',
+861 verbose parsed url   href: '~0.4.2' }
+862 verbose addNamed [ 'eve', '~0.4.2' ]
+863 verbose addNamed [ null, '>=0.4.2-0 <0.5.0-0' ]
+864 silly lockFile d25a674d-eve-0-4-2 eve@~0.4.2
+865 verbose lock eve@~0.4.2 /Users/jftesser/.npm/d25a674d-eve-0-4-2.lock
+866 silly addNameRange { name: 'eve', range: '>=0.4.2-0 <0.5.0-0', hasData: false }
+867 verbose request where is /eve
+868 verbose request registry https://registry.npmjs.org/
+869 verbose request id ef165b7dd1c3c1e4
+870 verbose url raw /eve
+871 verbose url resolving [ 'https://registry.npmjs.org/', './eve' ]
+872 verbose url resolved https://registry.npmjs.org/eve
+873 verbose request where is https://registry.npmjs.org/eve
+874 info trying registry request attempt 1 at 16:47:20
+875 verbose etag "AWZF5M8DMQ0Y4AZUVA2QRA29M"
+876 http GET https://registry.npmjs.org/eve
+877 http 304 https://registry.npmjs.org/eve
+878 silly registry.get cb [ 304,
+878 silly registry.get   { date: 'Sat, 18 Apr 2015 20:47:21 GMT',
+878 silly registry.get     server: 'Apache',
+878 silly registry.get     via: '1.1 varnish',
+878 silly registry.get     'last-modified': 'Sat, 18 Apr 2015 20:47:21 GMT',
+878 silly registry.get     'cache-control': 'max-age=60',
+878 silly registry.get     etag: '"AWZF5M8DMQ0Y4AZUVA2QRA29M"',
+878 silly registry.get     age: '0',
+878 silly registry.get     'x-served-by': 'cache-iad2143-IAD',
+878 silly registry.get     'x-cache': 'HIT',
+878 silly registry.get     'x-cache-hits': '1',
+878 silly registry.get     'x-timer': 'S1429390041.352738,VS0,VE351',
+878 silly registry.get     vary: 'Accept',
+878 silly registry.get     'content-length': '0',
+878 silly registry.get     'keep-alive': 'timeout=10, max=50',
+878 silly registry.get     connection: 'Keep-Alive' } ]
+879 verbose etag https://registry.npmjs.org/eve from cache
+880 silly addNameRange number 2 { name: 'eve', range: '>=0.4.2-0 <0.5.0-0', hasData: true }
+881 silly addNameRange versions [ 'eve', [ '0.2.4', '0.3.5', '0.4.1', '0.4.2', '0.5.0' ] ]
+882 verbose addNamed [ 'eve', '0.4.2' ]
+883 verbose addNamed [ '0.4.2', '0.4.2' ]
+884 silly lockFile 8b0d5ca6-eve-0-4-2 eve@0.4.2
+885 verbose lock eve@0.4.2 /Users/jftesser/.npm/8b0d5ca6-eve-0-4-2.lock
+886 silly lockFile 8b0d5ca6-eve-0-4-2 eve@0.4.2
+887 silly lockFile 8b0d5ca6-eve-0-4-2 eve@0.4.2
+888 silly lockFile d25a674d-eve-0-4-2 eve@~0.4.2
+889 silly lockFile d25a674d-eve-0-4-2 eve@~0.4.2
+890 silly resolved [ { name: 'eve',
+890 silly resolved     author:
+890 silly resolved      { name: 'Dmitry Baranovskiy',
+890 silly resolved        email: 'dmitry@baranovskiy.com',
+890 silly resolved        url: 'http://dmitry.baranovskiy.com' },
+890 silly resolved     description: 'Simple custom events',
+890 silly resolved     version: '0.4.2',
+890 silly resolved     main: './eve.js',
+890 silly resolved     repository: { type: 'git', url: 'git@github.com:adobe-webplatform/eve.git' },
+890 silly resolved     bugs: { url: 'https://github.com/adobe-webplatform/eve/issues' },
+890 silly resolved     _id: 'eve@0.4.2',
+890 silly resolved     dist:
+890 silly resolved      { shasum: '7eea0afc0e4efb7c9365615315a3576833ead2ae',
+890 silly resolved        tarball: 'http://registry.npmjs.org/eve/-/eve-0.4.2.tgz' },
+890 silly resolved     _from: 'eve@~0.4.2',
+890 silly resolved     _npmVersion: '1.3.5',
+890 silly resolved     _npmUser: { name: 'dmitrybaranovskiy', email: 'dmitry@baranovskiy.com' },
+890 silly resolved     maintainers: [ [Object] ],
+890 silly resolved     directories: {},
+890 silly resolved     _shasum: '7eea0afc0e4efb7c9365615315a3576833ead2ae',
+890 silly resolved     _resolved: 'https://registry.npmjs.org/eve/-/eve-0.4.2.tgz',
+890 silly resolved     readme: 'ERROR: No README data found!',
+890 silly resolved     homepage: 'https://github.com/adobe-webplatform/eve' } ]
+891 info install eve@0.4.2 into /Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg
+892 info installOne eve@0.4.2
+893 verbose node_modules/snapsvg/node_modules/eve unbuild
+894 verbose tar unpack /Users/jftesser/.npm/eve/0.4.2/package.tgz
+895 silly lockFile a8a054f8-modules-snapsvg-node-modules-eve tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg/node_modules/eve
+896 verbose lock tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg/node_modules/eve /Users/jftesser/.npm/a8a054f8-modules-snapsvg-node-modules-eve.lock
+897 silly lockFile 0bc7d5b1-tesser-npm-eve-0-4-2-package-tgz tar:///Users/jftesser/.npm/eve/0.4.2/package.tgz
+898 verbose lock tar:///Users/jftesser/.npm/eve/0.4.2/package.tgz /Users/jftesser/.npm/0bc7d5b1-tesser-npm-eve-0-4-2-package-tgz.lock
+899 silly gunzTarPerm modes [ '755', '644' ]
+900 silly gunzTarPerm extractEntry package.json
+901 silly gunzTarPerm extractEntry README.md
+902 silly gunzTarPerm extractEntry LICENSE
+903 silly gunzTarPerm extractEntry eve.js
+904 silly gunzTarPerm extractEntry component.json
+905 silly gunzTarPerm extractEntry e.html
+906 silly lockFile a8a054f8-modules-snapsvg-node-modules-eve tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg/node_modules/eve
+907 silly lockFile a8a054f8-modules-snapsvg-node-modules-eve tar:///Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg/node_modules/eve
+908 silly lockFile 0bc7d5b1-tesser-npm-eve-0-4-2-package-tgz tar:///Users/jftesser/.npm/eve/0.4.2/package.tgz
+909 silly lockFile 0bc7d5b1-tesser-npm-eve-0-4-2-package-tgz tar:///Users/jftesser/.npm/eve/0.4.2/package.tgz
+910 info preinstall eve@0.4.2
+911 verbose readDependencies using package.json deps
+912 verbose readDependencies using package.json deps
+913 silly resolved []
+914 verbose about to build /Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg/node_modules/eve
+915 info build /Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg/node_modules/eve
+916 verbose linkStuff [ false,
+916 verbose linkStuff   false,
+916 verbose linkStuff   false,
+916 verbose linkStuff   '/Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg/node_modules' ]
+917 info linkStuff eve@0.4.2
+918 verbose linkBins eve@0.4.2
+919 verbose linkMans eve@0.4.2
+920 verbose rebuildBundles eve@0.4.2
+921 info install eve@0.4.2
+922 info postinstall eve@0.4.2
+923 verbose about to build /Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg
+924 info build /Users/jftesser/Documents/Projects/hue plan/web/node_modules/snapsvg
+925 verbose linkStuff [ false,
+925 verbose linkStuff   false,
+925 verbose linkStuff   false,
+925 verbose linkStuff   '/Users/jftesser/Documents/Projects/hue plan/web/node_modules' ]
+926 info linkStuff snapsvg@0.4.1
+927 verbose linkBins snapsvg@0.4.1
+928 verbose linkMans snapsvg@0.4.1
+929 verbose rebuildBundles snapsvg@0.4.1
+930 verbose rebuildBundles [ 'eve' ]
+931 info install snapsvg@0.4.1
+932 info postinstall snapsvg@0.4.1
+933 info build /Users/jftesser/Documents/Projects/hue plan/web
+934 verbose linkStuff [ false,
+934 verbose linkStuff   false,
+934 verbose linkStuff   false,
+934 verbose linkStuff   '/Users/jftesser/Documents/Projects/hue plan' ]
+935 info linkStuff web@1.0.0
+936 verbose linkBins web@1.0.0
+937 verbose linkMans web@1.0.0
+938 verbose rebuildBundles web@1.0.0
+939 verbose rebuildBundles [ '.bin',
+939 verbose rebuildBundles   'bower',
+939 verbose rebuildBundles   'browserify',
+939 verbose rebuildBundles   'grunt',
+939 verbose rebuildBundles   'snapsvg',
+939 verbose rebuildBundles   'tinycolor2',
+939 verbose rebuildBundles   'vec2' ]
+940 verbose rebuild bundle /Users/jftesser/Documents/Projects/hue plan/web/node_modules/grunt
+941 info build /Users/jftesser/Documents/Projects/hue plan/web/node_modules/grunt
+942 info preinstall grunt@0.4.5
+943 verbose linkStuff [ false,
+943 verbose linkStuff   false,
+943 verbose linkStuff   false,
+943 verbose linkStuff   '/Users/jftesser/Documents/Projects/hue plan/web/node_modules' ]
+944 info linkStuff grunt@0.4.5
+945 verbose linkBins grunt@0.4.5
+946 verbose linkMans grunt@0.4.5
+947 verbose rebuildBundles grunt@0.4.5
+948 verbose rebuildBundles [ '.bin',
+948 verbose rebuildBundles   'async',
+948 verbose rebuildBundles   'coffee-script',
+948 verbose rebuildBundles   'colors',
+948 verbose rebuildBundles   'dateformat',
+948 verbose rebuildBundles   'eventemitter2',
+948 verbose rebuildBundles   'exit',
+948 verbose rebuildBundles   'findup-sync',
+948 verbose rebuildBundles   'getobject',
+948 verbose rebuildBundles   'glob',
+948 verbose rebuildBundles   'grunt-legacy-log',
+948 verbose rebuildBundles   'grunt-legacy-util',
+948 verbose rebuildBundles   'hooker',
+948 verbose rebuildBundles   'iconv-lite',
+948 verbose rebuildBundles   'js-yaml',
+948 verbose rebuildBundles   'lodash',
+948 verbose rebuildBundles   'minimatch',
+948 verbose rebuildBundles   'nopt',
+948 verbose rebuildBundles   'rimraf',
+948 verbose rebuildBundles   'underscore.string',
+948 verbose rebuildBundles   'which' ]
+949 info install grunt@0.4.5
+950 info postinstall grunt@0.4.5
+951 info install web@1.0.0
+952 info postinstall web@1.0.0
+953 info prepublish web@1.0.0
+954 verbose unsafe-perm in lifecycle true
+955 info web@1.0.0 Failed to exec prepublish script
+956 error web@1.0.0 prepublish: `bower install; browserify src/hue.js -o dist/bundle.js`
+956 error Exit status 1
+957 error Failed at the web@1.0.0 prepublish script.
+957 error This is most likely a problem with the web package,
+957 error not with npm itself.
+957 error Tell the author that this fails on your system:
+957 error     bower install; browserify src/hue.js -o dist/bundle.js
+957 error You can get their info via:
+957 error     npm owner ls web
+957 error There is likely additional logging output above.
+958 error System Darwin 14.3.0
+959 error command "node" "/usr/local/bin/npm" "install"
+960 error cwd /Users/jftesser/Documents/Projects/hue plan/web
+961 error node -v v0.10.36
+962 error npm -v 1.4.28
+963 error code ELIFECYCLE
+964 verbose exit [ 1, true ]

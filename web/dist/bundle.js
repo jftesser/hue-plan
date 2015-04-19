@@ -21034,25 +21034,24 @@ var hueToggle = function(ind) {
       	if (resp.state.on) {
       		newstate = false;
       	}
-      	var st_alpha = 0.0;
-      	var en_alpha = 0.0;
-      	if (newstate) {
-      		en_alpha = 1.0;
-      	} else {
-      		st_alpha = 1.0;
-      	}
-      	var light_geom = lights[ind-1].geom.select("#light"+ind);
-      	Snap.animate( st_alpha, en_alpha, function( value ) { light_geom.selectAll("path").attr({"fill-opacity": value}); }, 500 ,mina.easein); 
-
-        xhr({
-          verb: 'PUT',
-          url: 'http://10.0.1.12/api/newdeveloper/lights/'+ind+'/state',
-          data: JSON.stringify({
-            on: newstate
-          })
-        });
+      	hueSet(ind,newstate);
       });
 };
+
+var hueSet = function(ind, newstate) {
+	var en_alpha = 0.0;
+	if (newstate) en_alpha = 1.0;
+	var light_geom = lights[ind-1].geom.select("#light"+ind);
+    light_geom.selectAll("path").animate({"fill-opacity": en_alpha},500,mina.easein);
+
+	xhr({
+		verb: 'PUT',
+		url: 'http://10.0.1.12/api/newdeveloper/lights/'+ind+'/state',
+		data: JSON.stringify({
+		on: newstate
+		})
+    });
+}
 
 var convertStateToColor = function(state) {
 	// 255 65535
@@ -21067,7 +21066,6 @@ var getHueColor = function(ind) {
         
     	lights[ind-1].geom.select("#light"+ind).selectAll("path").attr({fill: color.toHexString()});
     	if (resp.state.on == false) {
-    		console.log("off "+ind);
     		lights[ind-1].geom.select("#light"+ind).selectAll("path").attr({"fill-opacity": 0.0});
     	} else {
     		lights[ind-1].geom.select("#light"+ind).selectAll("path").attr({"fill-opacity": 1.0});
@@ -21080,34 +21078,16 @@ var getHueColor = function(ind) {
 var background = "#FFFFFF";
 var lights = [];
 
+var rooms = [];
+
+var living_inds = [1,2,3];
+var office_inds = [3,4,5];
+
 var tc_background = tinycolor(background);
 
 var light_cnt = 5; // this will change!
 
 document.body.style.background = background;
-
-
-function tweenColor(s,at,st,g) {
-  var st_hsl = st.toHsl();
-  var g_hsl = g.toHsl();
-  var st_h_vec = new Vec2(Math.cos(st_hsl.h/360.0*2*Math.PI),Math.sin(st_hsl.h/360.0*2*Math.PI));
-  var g_h_vec = new Vec2(Math.cos(g_hsl.h/360.0*2*Math.PI),Math.sin(g_hsl.h/360.0*2*Math.PI));
-  st_h_vec.multiply(1.0-at,false);
-  g_h_vec.multiply(at,false);
-  var vec = st_h_vec.add(g_h_vec,true);
-  var ang = Math.atan2(vec.y,vec.x);
-  if (ang < 0) ang += 2*Math.PI;
-  var calced_h = ang/(2*Math.PI)*360.0;
-  var c_hsv = { 
-    h:calced_h,
-    s:st_hsl.s*(1.0-at)+g_hsl.a*at,
-    l:st_hsl.l
-  };
-
-  var calced = tinycolor(c_hsv);
-
-  s.selectAll("path").attr({fill: calced.toHexString() });
-}
 
 
 document.addEventListener("DOMContentLoaded", function(event) { 
@@ -21117,7 +21097,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   s.append(s_apt);
   s_apt.attr({width:"100%", height:"100%"});
   Snap.load("apartment.svg", function (f) {
-    //f.select("#light1").selectAll("path").attr({fill: "#bada55"});
+    // set up lights
     for (var i=1; i<=light_cnt; i++) {
     	var l = f.select("#hue"+i.toString());
     	var ind = i;
@@ -21129,6 +21109,38 @@ document.addEventListener("DOMContentLoaded", function(event) {
     	lights.push({geom:l,color:c});
     	getHueColor(i);
 	}
+	// set up rooms
+	var roomOnOff = function(dy, inds, geom) {
+		console.log("stopped dragging "+dy);
+		if (dy < -5) {
+			// turn on
+			for (var i = 0; i < inds.length; i++) {
+				hueSet(inds[i],true);
+			};
+		} else if (dy > 5) {
+			// turn off
+			for (var i = 0; i < inds.length; i++) {
+				hueSet(inds[i],false);
+			};
+		}
+		geom.selectAll("path").animate({fill: "#FFFFFF"},500,mina.easein,function(){geom.selectAll("path").animate({fill: "#0000000"},500,mina.easeout);});
+	};
+	// living
+	var living_geom = f.select("#power_x5F_living");
+	var living_dy;
+	living_geom.drag(function(dx,dy) {living_dy = dy;},null,function(){
+		roomOnOff(living_dy,living_inds,living_geom);
+	});
+	rooms.push({geom: living_geom, inds: living_inds});
+	// office
+	var office_geom = f.select("#power_x5F_office");
+	var office_dy;
+	office_geom.drag(function(dx,dy) {office_dy = dy;},null,function(){
+		roomOnOff(office_dy,office_inds,office_geom);
+	});
+	rooms.push({geom: office_geom, inds: office_inds});
+	// bedroom TK
+
     s_apt.append(f);
     s_apt.width = "100%";
   });

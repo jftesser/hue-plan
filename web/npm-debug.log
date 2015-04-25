@@ -7,50 +7,50 @@
 5 verbose install   [ 'bower', 'browserify', 'snapsvg', 'tinycolor2', 'vec2' ] ]
 6 info preinstall web@1.0.0
 7 verbose readDependencies using package.json deps
-8 verbose already installed skipping tinycolor2@^1.1.2 /Users/jftesser/Documents/Projects/hue plan/web
-9 verbose already installed skipping vec2@^1.6.0 /Users/jftesser/Documents/Projects/hue plan/web
-10 verbose already installed skipping bower@^1.3.12 /Users/jftesser/Documents/Projects/hue plan/web
-11 verbose already installed skipping browserify@^8.1.2 /Users/jftesser/Documents/Projects/hue plan/web
-12 verbose cache add [ 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev',
-12 verbose cache add   null ]
-13 verbose cache add name=undefined spec="snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev" args=["snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev",null]
-14 verbose parsed url { protocol: null,
-14 verbose parsed url   slashes: null,
-14 verbose parsed url   auth: null,
-14 verbose parsed url   host: null,
-14 verbose parsed url   port: null,
-14 verbose parsed url   hostname: null,
-14 verbose parsed url   hash: '#dev',
-14 verbose parsed url   search: null,
-14 verbose parsed url   query: null,
-14 verbose parsed url   pathname: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git',
-14 verbose parsed url   path: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git',
-14 verbose parsed url   href: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev' }
-15 verbose cache add name="snapsvg" spec="git://github.com/adobe-webplatform/Snap.svg.git#dev" args=["snapsvg","git://github.com/adobe-webplatform/Snap.svg.git#dev"]
-16 verbose parsed url { protocol: 'git:',
-16 verbose parsed url   slashes: true,
-16 verbose parsed url   auth: null,
-16 verbose parsed url   host: 'github.com',
-16 verbose parsed url   port: null,
-16 verbose parsed url   hostname: 'github.com',
-16 verbose parsed url   hash: '#dev',
-16 verbose parsed url   search: null,
-16 verbose parsed url   query: null,
-16 verbose parsed url   pathname: '/adobe-webplatform/Snap.svg.git',
-16 verbose parsed url   path: '/adobe-webplatform/Snap.svg.git',
-16 verbose parsed url   href: 'git://github.com/adobe-webplatform/Snap.svg.git#dev' }
-17 silly lockFile f426ab0d-m-adobe-webplatform-Snap-svg-git git://github.com/adobe-webplatform/Snap.svg.git
-18 verbose lock git://github.com/adobe-webplatform/Snap.svg.git /Users/jftesser/.npm/f426ab0d-m-adobe-webplatform-Snap-svg-git.lock
-19 verbose addRemoteGit [ 'git://github.com/adobe-webplatform/Snap.svg.git', 'dev' ]
+8 verbose cache add [ 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev',
+8 verbose cache add   null ]
+9 verbose cache add name=undefined spec="snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev" args=["snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev",null]
+10 verbose parsed url { protocol: null,
+10 verbose parsed url   slashes: null,
+10 verbose parsed url   auth: null,
+10 verbose parsed url   host: null,
+10 verbose parsed url   port: null,
+10 verbose parsed url   hostname: null,
+10 verbose parsed url   hash: '#dev',
+10 verbose parsed url   search: null,
+10 verbose parsed url   query: null,
+10 verbose parsed url   pathname: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git',
+10 verbose parsed url   path: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git',
+10 verbose parsed url   href: 'snapsvg@git://github.com/adobe-webplatform/Snap.svg.git#dev' }
+11 verbose already installed skipping tinycolor2@^1.1.2 /Users/jftesser/Documents/Projects/hue plan/web
+12 verbose cache add name="snapsvg" spec="git://github.com/adobe-webplatform/Snap.svg.git#dev" args=["snapsvg","git://github.com/adobe-webplatform/Snap.svg.git#dev"]
+13 verbose parsed url { protocol: 'git:',
+13 verbose parsed url   slashes: true,
+13 verbose parsed url   auth: null,
+13 verbose parsed url   host: 'github.com',
+13 verbose parsed url   port: null,
+13 verbose parsed url   hostname: 'github.com',
+13 verbose parsed url   hash: '#dev',
+13 verbose parsed url   search: null,
+13 verbose parsed url   query: null,
+13 verbose parsed url   pathname: '/adobe-webplatform/Snap.svg.git',
+13 verbose parsed url   path: '/adobe-webplatform/Snap.svg.git',
+13 verbose parsed url   href: 'git://github.com/adobe-webplatform/Snap.svg.git#dev' }
+14 silly lockFile f426ab0d-m-adobe-webplatform-Snap-svg-git git://github.com/adobe-webplatform/Snap.svg.git
+15 verbose lock git://github.com/adobe-webplatform/Snap.svg.git /Users/jftesser/.npm/f426ab0d-m-adobe-webplatform-Snap-svg-git.lock
+16 verbose already installed skipping vec2@^1.6.0 /Users/jftesser/Documents/Projects/hue plan/web
+17 verbose addRemoteGit [ 'git://github.com/adobe-webplatform/Snap.svg.git', 'dev' ]
+18 verbose already installed skipping bower@^1.3.12 /Users/jftesser/Documents/Projects/hue plan/web
+19 verbose already installed skipping browserify@^8.1.2 /Users/jftesser/Documents/Projects/hue plan/web
 20 verbose git remote.origin.url git://github.com/adobe-webplatform/Snap.svg.git
 21 verbose git fetch -a origin (git://github.com/adobe-webplatform/Snap.svg.git)
 22 verbose git rev-list -n1 dev d2701c4fb0eb802bcb4f5b70f20b822ee9342dcf
 23 verbose resolved git url git://github.com/adobe-webplatform/Snap.svg.git#d2701c4fb0eb802bcb4f5b70f20b822ee9342dcf
-24 verbose tar unpack /var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz
-25 silly lockFile 9c97f153-06686417455784976-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz-unpack
-26 verbose lock tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz-unpack /Users/jftesser/.npm/9c97f153-06686417455784976-tmp-tgz-unpack.lock
-27 silly lockFile 7835d2d2-0909-0-06686417455784976-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz
-28 verbose lock tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz /Users/jftesser/.npm/7835d2d2-0909-0-06686417455784976-tmp-tgz.lock
+24 verbose tar unpack /var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz
+25 silly lockFile 09a26d1e--2685464893002063-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz-unpack
+26 verbose lock tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz-unpack /Users/jftesser/.npm/09a26d1e--2685464893002063-tmp-tgz-unpack.lock
+27 silly lockFile cb2d39d3-15124-0-2685464893002063-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz
+28 verbose lock tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz /Users/jftesser/.npm/cb2d39d3-15124-0-2685464893002063-tmp-tgz.lock
 29 silly gunzTarPerm modes [ '755', '644' ]
 30 silly gunzTarPerm extractEntry
 31 silly gunzTarPerm modified mode [ '', 509, 493 ]
@@ -462,10 +462,10 @@
 427 silly gunzTarPerm modified mode [ 'test/system.js', 436, 420 ]
 428 silly gunzTarPerm extractEntry test/test.html
 429 silly gunzTarPerm modified mode [ 'test/test.html', 436, 420 ]
-430 silly lockFile 9c97f153-06686417455784976-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz-unpack
-431 silly lockFile 9c97f153-06686417455784976-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz-unpack
-432 silly lockFile 7835d2d2-0909-0-06686417455784976-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz
-433 silly lockFile 7835d2d2-0909-0-06686417455784976-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-5212-V5vOjjaH/1429397390909-0.06686417455784976/tmp.tgz
+430 silly lockFile 09a26d1e--2685464893002063-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz-unpack
+431 silly lockFile 09a26d1e--2685464893002063-tmp-tgz-unpack tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz-unpack
+432 silly lockFile cb2d39d3-15124-0-2685464893002063-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz
+433 silly lockFile cb2d39d3-15124-0-2685464893002063-tmp-tgz tar:///var/folders/1x/vp9g2j65237fh_gmycsk0f7h0000gn/T/npm-7389-dE7wDXJr/1429473415124-0.2685464893002063/tmp.tgz
 434 silly lockFile f426ab0d-m-adobe-webplatform-Snap-svg-git git://github.com/adobe-webplatform/Snap.svg.git
 435 silly lockFile f426ab0d-m-adobe-webplatform-Snap-svg-git git://github.com/adobe-webplatform/Snap.svg.git
 436 silly resolved [ { name: 'snapsvg',
@@ -958,27 +958,27 @@
 866 silly addNameRange { name: 'eve', range: '>=0.4.2-0 <0.5.0-0', hasData: false }
 867 verbose request where is /eve
 868 verbose request registry https://registry.npmjs.org/
-869 verbose request id e248de37b545bc29
+869 verbose request id d52a786c9283ff11
 870 verbose url raw /eve
 871 verbose url resolving [ 'https://registry.npmjs.org/', './eve' ]
 872 verbose url resolved https://registry.npmjs.org/eve
 873 verbose request where is https://registry.npmjs.org/eve
-874 info trying registry request attempt 1 at 18:49:51
+874 info trying registry request attempt 1 at 15:56:56
 875 verbose etag "AWZF5M8DMQ0Y4AZUVA2QRA29M"
 876 http GET https://registry.npmjs.org/eve
 877 http 304 https://registry.npmjs.org/eve
 878 silly registry.get cb [ 304,
-878 silly registry.get   { date: 'Sat, 18 Apr 2015 22:49:52 GMT',
+878 silly registry.get   { date: 'Sun, 19 Apr 2015 19:56:56 GMT',
 878 silly registry.get     server: 'Apache',
 878 silly registry.get     via: '1.1 varnish',
-878 silly registry.get     'last-modified': 'Sat, 18 Apr 2015 21:38:33 GMT',
+878 silly registry.get     'last-modified': 'Sun, 19 Apr 2015 19:56:56 GMT',
 878 silly registry.get     'cache-control': 'max-age=60',
 878 silly registry.get     etag: '"AWZF5M8DMQ0Y4AZUVA2QRA29M"',
 878 silly registry.get     age: '27',
-878 silly registry.get     'x-served-by': 'cache-iad2127-IAD',
+878 silly registry.get     'x-served-by': 'cache-iad2135-IAD',
 878 silly registry.get     'x-cache': 'HIT',
 878 silly registry.get     'x-cache-hits': '1',
-878 silly registry.get     'x-timer': 'S1429397392.626164,VS0,VE0',
+878 silly registry.get     'x-timer': 'S1429473416.212828,VS0,VE0',
 878 silly registry.get     vary: 'Accept',
 878 silly registry.get     'content-length': '0',
 878 silly registry.get     'keep-alive': 'timeout=10, max=50',

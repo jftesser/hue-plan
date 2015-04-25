@@ -22,7 +22,7 @@ var hueSet = function(ind, newstate) {
 	if (newstate) en_alpha = 1.0;
 	var light_geom = lights[ind-1].geom.select("#light"+ind);
     light_geom.selectAll("path").animate({"fill-opacity": en_alpha},500,mina.easein);
-
+    lights[ind-1].on = newstate;
 	xhr({
 		verb: 'PUT',
 		url: 'http://10.0.1.12/api/newdeveloper/lights/'+ind+'/state',
@@ -45,12 +45,46 @@ var getHueColor = function(ind) {
         
     	lights[ind-1].geom.select("#light"+ind).selectAll("path").attr({fill: color.toHexString()});
     	if (resp.state.on == false) {
+    		lights[ind-1].on = false;
     		lights[ind-1].geom.select("#light"+ind).selectAll("path").attr({"fill-opacity": 0.0});
     	} else {
+    		lights[ind-1].on = true;
     		lights[ind-1].geom.select("#light"+ind).selectAll("path").attr({"fill-opacity": 1.0});
     	}
     	lights[ind-1].color = color;
       });
+}
+
+var hueSetColor = function(ind) {
+	var hsv = lights[ind-1].color.toHsv();
+	xhr({
+		verb: 'PUT',
+		url: 'http://10.0.1.12/api/newdeveloper/lights/'+ind+'/state',
+		data: JSON.stringify({
+		hue: Math.round(hsv.h/360.0*65535),
+		sat: Math.round(hsv.s*255),
+		bri: Math.round(hsv.v*255)
+		})
+    });
+    lights[ind-1].geom.select("#light"+ind).selectAll("path").attr({fill: lights[ind-1].color.toHexString()});
+}
+
+var offsetColor = function(dx,dy,color) {
+	var div = document.getElementById('rotator');
+	var sc = 360.0/(div.clientWidth*0.33);
+	var calced_color = tinycolor(color.toString()).spin(dx*sc);
+
+	sc = 100.0/(div.clientHeight*0.25);
+	if (dy < 0) {
+		// lighten
+		calced_color.lighten(Math.abs(dy)*sc);
+	}
+	if (dy > 0) {
+		// darken
+		calced_color.darken(Math.abs(dy)*sc);
+		calced_color.saturate(Math.abs(dy)*sc);
+	}
+	return calced_color;
 }
 
 
@@ -77,16 +111,51 @@ document.addEventListener("DOMContentLoaded", function(event) {
   s_apt.attr({width:"100%", height:"100%"});
   Snap.load("apartment.svg", function (f) {
     // set up lights
-    for (var i=1; i<=light_cnt; i++) {
+    for (var i=1; i<=light_cnt; i++) { (function(i) {
     	var l = f.select("#hue"+i.toString());
-    	var ind = i;
-    	l.click((function(ind) { return function(){ 
-    		console.log("toggling "+ind);
-    		hueToggle(ind);
-    		};})(ind));
     	var c = tinycolor("#FFFFFF");
-    	lights.push({geom:l,color:c});
+    	lights.push({geom:l,color:c,on:false,dx:0,dy:0});
+
+    	/*l.click(function(){ 
+    		console.log("toggling "+i);
+    		hueToggle(i);
+    		});*/
+    	
+    	var start = function() {
+    		lights[i-1].dx = 0;
+    		lights[i-1].dy = 0;
+    	}
+
+    	var minos = 5; // total guess
+    	var move = function(dx,dy) {
+    		// calculate offset and set background color
+    		if (lights[i-1].on) {
+	    		lights[i-1].dx = dx;
+	    		lights[i-1].dy = dy;
+	    		if (Math.abs(dx) > minos || Math.abs(dy) > minos) {
+	    			var calced_color = offsetColor(dx,dy,lights[i-1].color);
+	    			document.body.style.background = calced_color.toHexString();
+	    		}
+    		}
+    	};
+    	var stop = function() {
+    		document.body.style.background = background;
+    		if ((Math.abs(lights[i-1].dx) > minos || Math.abs(lights[i-1].dy) > minos) && lights[i-1].on) {
+    			var calced_color = offsetColor(lights[i-1].dx,lights[i-1].dy,lights[i-1].color);
+    			lights[i-1].color = calced_color;
+				lights[i-1].dx = 0;
+    			lights[i-1].dy = 0;
+    			hueSetColor(i);
+    		} else {
+    			hueToggle(i);
+    		}
+    	}
+
+    	l.drag(move,start,stop);
+
     	getHueColor(i);
+
+    })(i);
 	}
 	// set up rooms
 	var roomOnOff = function(dy, inds, geom) {
@@ -122,10 +191,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     s_apt.append(f);
     s_apt.width = "100%";
+
+    layout_svgs();
   });
+
+	/*var i;
+    for (i=0; i<rooms.length;i++) {
+    	rooms[i].geom.animate({transform: 'r90'},500,mina.easein);
+    }*/
 
   
   var layout_svgs = function() {
+
     //var gw = window.innerWidth;
     //var gh = window.innerHeight;
 
@@ -134,29 +211,40 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var div = document.getElementById('rotator');
 
-    /*if (gw > gh) {
-      // we should rotate!
-      document.body.style.width = "94%";
-      document.body.style.height = "90%";
-      document.body.style.margin = "5% 1% 5% 5%"
-      div.style.setProperty("-webkit-transform", "rotate(-90deg) translate(-"+(gh*0.925).toString()+"px,-"+(gw*0.025).toString()+"px)", null);
-      div.style.setProperty("-webkit-transform-origin", "0px 0px", null);
-      gw = document.body.clientWidth;
-      gh = document.body.clientHeight;
-      div.style.width = gh.toString()+"px";
-      div.style.height = gw.toString()+"px";
-      gw = document.body.clientHeight;
-      gh = document.body.clientWidth;
+    if (gh > gw) {
+    	// we should rotate!
+      	div.style.setProperty("-webkit-transform", "rotate(-90deg) translate(-"+(gh*1.0).toString()+"px,-"+(gw*0.0).toString()+"px)", null);
+      	div.style.setProperty("-webkit-transform-origin", "0px 0px", null);
+    	gw = document.body.clientWidth;
+    	gh = document.body.clientHeight;
+    	div.style.width = gh.toString()+"px";
+    	div.style.height = gw.toString()+"px";
+    	gw = document.body.clientHeight;
+    	gh = document.body.clientWidth;
+
+    	var i;
+    	for (i=0; i<rooms.length;i++) {
+    		rooms[i].geom.transform( 'r90');
+    	}
+    	for (i=0; i<lights.length;i++) {
+    		lights[i].geom.transform( 'r90');
+    	}
     } else {
-      document.body.style.width = "90%";
-      document.body.style.height = "94%";
-      document.body.style.margin = "5% 5% 1% 5%"
       div.style.setProperty("-webkit-transform", "rotate(-0deg)", null);
       gw = document.body.clientWidth;
       gh = document.body.clientHeight;
       div.style.width = gw.toString()+"px";
       div.style.height = gh.toString()+"px";
-    }*/
+      var i;
+    	for (i=0; i<rooms.length;i++) {
+    		rooms[i].geom.transform( 'r0');
+    	}
+    	for (i=0; i<lights.length;i++) {
+    		lights[i].geom.transform( 'r0');
+    	}
+    }
+
+    
 
   };
 
@@ -164,5 +252,5 @@ document.addEventListener("DOMContentLoaded", function(event) {
     layout_svgs();
   };
 
-  layout_svgs();
+  
 });

@@ -72,7 +72,7 @@ var hueSetColor = function(ind) {
 var offsetColor = function(dx,dy,color) {
 	var div = document.getElementById('rotator');
 	var sc = 360.0/(div.clientWidth*0.33);
-	var calced_color = tinycolor(color.toString()).spin(dx*sc);
+	var calced_color = tinycolor(color.toString())
 
 	sc = 100.0/(div.clientHeight*0.25);
 	if (dy < 0) {
@@ -84,6 +84,9 @@ var offsetColor = function(dx,dy,color) {
 		calced_color.darken(Math.abs(dy)*sc);
 		calced_color.saturate(Math.abs(dy)*sc);
 	}
+
+  calced_color.spin(dx*sc);
+  
 	return calced_color;
 }
 
@@ -266,6 +269,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     setTimeout(color_checker, 1000);
   };
-  
+
   setTimeout(color_checker, 5000); // but start five seconds from now
 });

@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     for (var i=1; i<=light_cnt; i++) { (function(i) {
     	var l = f.select("#hue"+i.toString());
     	var c = tinycolor("#FFFFFF");
-    	lights.push({geom:l,color:c,on:false,dx:0,dy:0});
+    	lights.push({geom:l,color:c,on:false,dx:0,dy:0,dragging:false});
 
     	/*l.click(function(){ 
     		console.log("toggling "+i);
@@ -124,6 +124,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     	var start = function() {
     		lights[i-1].dx = 0;
     		lights[i-1].dy = 0;
+        lights[i-1].dragging = true;
     	}
 
     	var minos = 5; // total guess
@@ -143,12 +144,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     		if ((Math.abs(lights[i-1].dx) > minos || Math.abs(lights[i-1].dy) > minos) && lights[i-1].on) {
     			var calced_color = offsetColor(lights[i-1].dx,lights[i-1].dy,lights[i-1].color);
     			lights[i-1].color = calced_color;
-				lights[i-1].dx = 0;
+				  lights[i-1].dx = 0;
     			lights[i-1].dy = 0;
     			hueSetColor(i);
     		} else {
     			hueToggle(i);
     		}
+
+        lights[i-1].dragging = false;
     	}
 
     	l.drag(move,start,stop);
@@ -252,5 +255,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     layout_svgs();
   };
 
+  // query state of lights every second
+  var color_checker = function(){
+    var i;
+    for (i=0; i<lights.length;i++) {
+      if (lights[i].dragging == false) {
+        getHueColor(i+1);
+      }
+    }
+
+    setTimeout(color_checker, 1000);
+  };
   
+  setTimeout(color_checker, 5000); // but start five seconds from now
 });

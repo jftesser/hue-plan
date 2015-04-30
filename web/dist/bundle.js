@@ -21107,7 +21107,7 @@ var offsetColor = function(dx,dy,color) {
 	}
 
   calced_color.spin(dx*sc);
-  
+
 	return calced_color;
 }
 
@@ -21144,14 +21144,24 @@ document.addEventListener("DOMContentLoaded", function(event) {
     		console.log("toggling "+i);
     		hueToggle(i);
     		});*/
-    	
+    	var minos = 5; // total guess
+
     	var start = function() {
     		lights[i-1].dx = 0;
     		lights[i-1].dy = 0;
         lights[i-1].dragging = true;
+        if (lights[i-1].on) {
+          Snap.animate(0,1,function(at){
+            if (Math.abs(lights[i-1].dx) <= minos && Math.abs(lights[i-1].dy) <= minos) {
+              var c = lights[i-1].color.toRgb();
+              var calced = tinycolor({r:(c.r*at+255*(1-at)), g: (c.g*at+255*(1-at)), b: (c.b*at+255*(1-at))});
+              document.body.style.background = calced.toHexString();
+            }
+          },300,mina.easein);
+        }
     	}
 
-    	var minos = 5; // total guess
+    	
     	var move = function(dx,dy) {
     		// calculate offset and set background color
     		if (lights[i-1].on) {
@@ -21164,7 +21174,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     		}
     	};
     	var stop = function() {
-    		document.body.style.background = background;
+    		
     		if ((Math.abs(lights[i-1].dx) > minos || Math.abs(lights[i-1].dy) > minos) && lights[i-1].on) {
     			var calced_color = offsetColor(lights[i-1].dx,lights[i-1].dy,lights[i-1].color);
     			lights[i-1].color = calced_color;
@@ -21176,6 +21186,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     		}
 
         lights[i-1].dragging = false;
+
+        if (document.body.style.background != background) {
+          Snap.animate(1,0,function(at){
+            if (lights[i-1].dragging == false) {
+              var c = lights[i-1].color.toRgb();
+              var calced = tinycolor({r:(c.r*at+255*(1-at)), g: (c.g*at+255*(1-at)), b: (c.b*at+255*(1-at))});
+              document.body.style.background = calced.toHexString();
+            }
+          },300,mina.easein);
+        }
     	}
 
     	l.drag(move,start,stop);

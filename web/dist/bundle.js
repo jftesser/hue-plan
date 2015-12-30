@@ -21129,10 +21129,11 @@ var rooms = [];
 
 var living_inds = [1,2,3];
 var office_inds = [3,4,5];
+var bedroom_inds = [6,7];
 
 var tc_background = tinycolor(background);
 
-var light_cnt = 5; // this will change!
+var light_cnt = 7; // this will change!
 
 document.body.style.background = background;
 
@@ -21246,6 +21247,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	});
 	rooms.push({geom: office_geom, inds: office_inds});
 	// bedroom TK
+  var bedroom_geom = f.select("#power_x5F_bedroom");
+  var bedroom_dy;
+  bedroom_geom.drag(function(dx,dy) {bedroom_dy = dy;},null,function(){
+    roomOnOff(bedroom_dy,bedroom_inds,bedroom_geom);
+  });
+  rooms.push({geom: bedroom_geom, inds: bedroom_inds});
 
     s_apt.append(f);
     s_apt.width = "100%";

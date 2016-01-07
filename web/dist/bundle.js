@@ -21024,20 +21024,23 @@ var xhr = require('./xhr');
 var Snap = require('snapsvg');
 var tinycolor = require('tinycolor2');
 var Vec2 = require('vec2');
-var bridge_ip = "10.0.1.23"
+var bridge_ip = "10.0.1.14"
+var user_name = "3754f5d763aa2cd2c55d70f468e5e28";
 
 var getBridgeIP = function() {
   xhr({url: 'https://www.meethue.com/api/nupnp'})
       .then(JSON.parse.bind(JSON))
       .then(function(resp){
-        bridge_ip = resp[0].internalipaddress;
+        for (var i=0; i < resp.length; i++) {
+          if (resp[i].id == "001788fffe2284d7") bridge_ip = resp[i].internalipaddress;
+        }
       });
 };
 
 getBridgeIP();
 
 var hueToggle = function(ind) {
-  xhr({url: 'http://'+bridge_ip+'/api/newdeveloper/lights/'+ind})
+  xhr({url: 'http://'+bridge_ip+'/api/'+user_name+'/lights/'+ind})
       .then(JSON.parse.bind(JSON))
       .then(function(resp){
       	var newstate = true;
@@ -21056,7 +21059,7 @@ var hueSet = function(ind, newstate) {
     lights[ind-1].on = newstate;
 	xhr({
 		verb: 'PUT',
-		url: 'http://'+bridge_ip+'/api/newdeveloper/lights/'+ind+'/state',
+		url: 'http://'+bridge_ip+'/api/'+user_name+'/lights/'+ind+'/state',
 		data: JSON.stringify({
 		on: newstate
 		})
@@ -21069,7 +21072,7 @@ var convertStateToColor = function(state) {
 }
 
 var getHueColor = function(ind) {
-	return xhr({url: 'http://'+bridge_ip+'/api/newdeveloper/lights/'+ind})
+	return xhr({url: 'http://'+bridge_ip+'/api/'+user_name+'/lights/'+ind})
       .then(JSON.parse.bind(JSON))
       .then(function(resp){
         var color = convertStateToColor(resp.state);
@@ -21090,7 +21093,7 @@ var hueSetColor = function(ind) {
 	var hsv = lights[ind-1].color.toHsv();
 	xhr({
 		verb: 'PUT',
-		url: 'http://'+bridge_ip+'/api/newdeveloper/lights/'+ind+'/state',
+		url: 'http://'+bridge_ip+'/api/'+user_name+'/lights/'+ind+'/state',
 		data: JSON.stringify({
 		hue: Math.round(hsv.h/360.0*65535),
 		sat: Math.round(hsv.s*255),
